@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="东东">
+    
+    <title>
+        
+            网络安全 |
+        
+        HX的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.png">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066cc","logo":"/images/logo.png","favicon":"/images/logo.png","avatar":"/images/avatar.png","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"header_transparent":false,"background_img":"/images/bg.svg","description":"人生何处不青山","font_color":null,"hitokoto":false},"scroll":{"progress_bar":true,"percent":false}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"obsidian"},"side_tools":{},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.8"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":true,"wordcount":true,"min2read":true},"img_align":"left","copyright_info":true},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.png">
+                </a>
+            
+            <a class="logo-title" href="/">
+               HX的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">网络安全</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">东东</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-07-26 09:02:36</span>
+        <span class="mobile">2023-07-26 09:02</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-07-26 10:41:50</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>474 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id="搭建HEXO博客"><a href="#搭建HEXO博客" class="headerlink" title="搭建HEXO博客"></a>搭建HEXO博客</h1><p>​                                                   </p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a><strong>下载</strong></h2><h4 id="1-提前安装好-node-js-https-nodejs-org-en-左边的那个"><a href="#1-提前安装好-node-js-https-nodejs-org-en-左边的那个" class="headerlink" title="1.提前安装好(node.js)[https://nodejs.org/en] 左边的那个"></a><strong>1.提前安装好(node.js)[<a class="link"   target="_blank" rel="noopener" href="https://nodejs.org/en]" >https://nodejs.org/en]<i class="fas fa-external-link-alt"></i></a> 左边的那个</strong></h4><h4 id="2-提前安装好-GIt-https-git-scm-com-downloads"><a href="#2-提前安装好-GIt-https-git-scm-com-downloads" class="headerlink" title="2.提前安装好(GIt)[https://git-scm.com/downloads]"></a><strong>2.提前安装好(GIt)[<a class="link"   target="_blank" rel="noopener" href="https://git-scm.com/downloads]" >https://git-scm.com/downloads]<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="3-提前注册好一个github账号"><a href="#3-提前注册好一个github账号" class="headerlink" title="3.提前注册好一个github账号"></a><strong>3.提前注册好一个github账号</strong></h4><h4 id="4-如果文章图片没有显示，请自行挂代理"><a href="#4-如果文章图片没有显示，请自行挂代理" class="headerlink" title="4.如果文章图片没有显示，请自行挂代理"></a><strong>4.如果文章图片没有显示，请自行挂代理</strong></h4><p>​                                   </p>
+<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a><strong>基本命令</strong></h2><h4 id="进入cmd-win-R-命令"><a href="#进入cmd-win-R-命令" class="headerlink" title="进入cmd (win+R)命令"></a>进入<code>cmd (win+R)</code>命令</h4><h4 id="hexo-g-生成编译好的博客文件"><a href="#hexo-g-生成编译好的博客文件" class="headerlink" title="hexo g 生成编译好的博客文件"></a><code>hexo g</code> 生成编译好的博客文件</h4><h4 id="hexo-clean-清理编译好的博客文件"><a href="#hexo-clean-清理编译好的博客文件" class="headerlink" title="hexo clean 清理编译好的博客文件"></a><code>hexo clean</code> 清理编译好的博客文件</h4><h4 id="hexo-s-启动博客服务"><a href="#hexo-s-启动博客服务" class="headerlink" title="hexo s 启动博客服务"></a><code>hexo s</code> 启动博客服务</h4><h4 id="hexo-deploy-发布博客"><a href="#hexo-deploy-发布博客" class="headerlink" title="hexo deploy 发布博客"></a><strong><code>hexo deploy</code> 发布博客</strong></h4><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>​                                                                                                                                                                                                 </p>
+<h2 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a><strong>安装HEXO</strong></h2><h4 id="打开cmd-执行-npm-intall-hexo-g"><a href="#打开cmd-执行-npm-intall-hexo-g" class="headerlink" title="打开cmd,执行 npm intall hexo -g"></a><code>打开cmd,执行 npm intall hexo -g</code></h4><p>​                                             </p>
+<h3 id="使用Git克隆"><a href="#使用Git克隆" class="headerlink" title="使用Git克隆"></a><strong>使用Git克隆</strong></h3><h4 id="git-clone-https-github-com-theme-keep-hexo-theme-keep-starter"><a href="#git-clone-https-github-com-theme-keep-hexo-theme-keep-starter" class="headerlink" title="git clone https://github.com/theme-keep/hexo-theme-keep-starter&lt;博客名&gt;"></a><code>git clone https://github.com/theme-keep/hexo-theme-keep-starter&lt;博客名&gt;</code></h4><p>​                                     </p>
+<h2 id="进入文件夹"><a href="#进入文件夹" class="headerlink" title="进入文件夹"></a><strong>进入文件夹</strong></h2><h4 id="cd"><a href="#cd" class="headerlink" title="cd&lt;文件夹&gt;"></a><code>cd&lt;文件夹&gt;</code></h4><p>​                           </p>
+<h2 id="如果下载速度太慢，可以使用淘宝源下载"><a href="#如果下载速度太慢，可以使用淘宝源下载" class="headerlink" title="如果下载速度太慢，可以使用淘宝源下载"></a><strong>如果下载速度太慢，可以使用淘宝源下载</strong></h2><h4 id="npm-config-set-registry-https-registry-npm-taobao-org"><a href="#npm-config-set-registry-https-registry-npm-taobao-org" class="headerlink" title="npm config set registry https://registry.npm.taobao.org/"></a><code>npm config set registry https://registry.npm.taobao.org/</code></h4><p>​                                               </p>
+<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a><strong>安装依赖</strong></h2><h4 id="cd-hexo-theme-keep-starter"><a href="#cd-hexo-theme-keep-starter" class="headerlink" title="cd hexo-theme-keep-starter"></a><strong><code>cd hexo-theme-keep-starter</code></strong></h4><h4 id="npm-install-安装"><a href="#npm-install-安装" class="headerlink" title="npm install  (安装)"></a><strong><code>npm install</code>  (安装)</strong></h4><p>​                      </p>
+<h2 id="启动Keep模板"><a href="#启动Keep模板" class="headerlink" title="启动Keep模板"></a><strong>启动Keep模板</strong></h2><h4 id="cd-hexo-theme-keep-starter-1"><a href="#cd-hexo-theme-keep-starter-1" class="headerlink" title="cd hexo-theme-keep-starter"></a><strong><code>cd hexo-theme-keep-starter</code></strong></h4><h4 id="npm-install-安装-1"><a href="#npm-install-安装-1" class="headerlink" title="npm install  (安装)"></a><strong><code>npm install</code>  (安装)</strong></h4><p>​                                                   </p>
+<h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a><strong>运行项目</strong></h2><h4 id="npm-run-server（启动服务）"><a href="#npm-run-server（启动服务）" class="headerlink" title="npm run server（启动服务）"></a><strong><code>npm run server</code>（启动服务）</strong></h4><p>​                                                </p>
+<h2 id="编译生成静态文件"><a href="#编译生成静态文件" class="headerlink" title="编译生成静态文件"></a><strong>编译生成静态文件</strong></h2><h4 id="npm-run-build"><a href="#npm-run-build" class="headerlink" title="npm run build"></a><strong><code>npm run build</code></strong></h4><p>​                                                            </p>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a><strong>配置主题</strong></h2><h4 id="npm-run-deploy"><a href="#npm-run-deploy" class="headerlink" title="npm run deploy"></a><strong><code>npm run deploy</code></strong></h4><p>​                                                                        </p>
+<h2 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a><strong>安装工具</strong></h2><h4 id="安装Typora或者VScode，建议使用Typora，插入图片更加方便。"><a href="#安装Typora或者VScode，建议使用Typora，插入图片更加方便。" class="headerlink" title="安装Typora或者VScode，建议使用Typora，插入图片更加方便。"></a><strong>安装Typora或者VScode，建议使用Typora，插入图片更加方便。</strong></h4><p>​                                                                                    </p>
+<h2 id="配置图片"><a href="#配置图片" class="headerlink" title="配置图片"></a><strong>配置图片</strong></h2><h4 id="打开Typora，点击文件，进入偏好设置，点击图像-如下图所示"><a href="#打开Typora，点击文件，进入偏好设置，点击图像-如下图所示" class="headerlink" title="打开Typora，点击文件，进入偏好设置，点击图像 如下图所示"></a><strong>打开Typora，点击文件，进入偏好设置，点击图像 如下图所示</strong></h4><h4 id="设置路径为下"><a href="#设置路径为下" class="headerlink" title="设置路径为下"></a><strong>设置路径为下</strong></h4><h4 id="source-images-filename"><a href="#source-images-filename" class="headerlink" title="../../source/images/${filename}"></a><strong><code>../../source/images/$&#123;filename&#125;</code></strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/1.png"
+                     
+                ></p>
+<p>​                                          </p>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><strong>新建文章</strong></h2><h4 id="进入Source文件夹下，打开POST文件，找到-在文件上方开启cmd，执行hexo-new-post"><a href="#进入Source文件夹下，打开POST文件，找到-在文件上方开启cmd，执行hexo-new-post" class="headerlink" title="进入Source文件夹下，打开POST文件，找到&lt;博客名&gt;,在文件上方开启cmd，执行hexo new post&lt;文章标题&gt;"></a><strong>进入Source文件夹下，打开POST文件，找到&lt;博客名&gt;,在文件上方开启cmd，执行hexo new post&lt;文章标题&gt;</strong></h4><h4 id="即可开启文章"><a href="#即可开启文章" class="headerlink" title="即可开启文章"></a><strong>即可开启文章</strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/2.png"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/3.png"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/4.png"
+                     
+                ></p>
+<h2 id="配置部署信息"><a href="#配置部署信息" class="headerlink" title="配置部署信息"></a><strong>配置部署信息</strong></h2><h5 id="进入博客文件夹，打开-config-yml-在最后一行输入："><a href="#进入博客文件夹，打开-config-yml-在最后一行输入：" class="headerlink" title="进入博客文件夹，打开 _config.yml , 在最后一行输入："></a><strong>进入博客文件夹，打开 _config.yml , 在最后一行输入：</strong></h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">type:git</span><br><span class="line">repo: https://github.com/PumpkinBridge/PumpkinBridge.gihub.io</span><br><span class="line">#https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io                            </span><br><span class="line">branch:main</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<p><code>其中repo的内容上方提到过:git@github.com:&lt;GitHub用户名&gt;/&lt;个性名&gt;.github.io.git</code></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a><strong>部署</strong></h2><h5 id="进入博客文件夹，打开-cmd-，依次执行："><a href="#进入博客文件夹，打开-cmd-，依次执行：" class="headerlink" title="进入博客文件夹，打开 cmd ，依次执行："></a><strong>进入博客文件夹，打开 <code>cmd</code> ，依次执行：</strong></h5><h5 id="生成编译文件：hexo-g"><a href="#生成编译文件：hexo-g" class="headerlink" title="生成编译文件：hexo g"></a><strong>生成编译文件：<code>hexo g</code></strong></h5><h5 id="发布博客：hexo-deploy"><a href="#发布博客：hexo-deploy" class="headerlink" title="发布博客：hexo deploy"></a><strong>发布博客：<code>hexo deploy</code></strong></h5><h5 id="执行完后等待1-2分钟，即可访问-https-github-io"><a href="#执行完后等待1-2分钟，即可访问-https-github-io" class="headerlink" title="执行完后等待1-2分钟，即可访问 https:&#x2F;&#x2F;&lt;个性名&gt;.github.io"></a><strong>执行完后等待1-2分钟，即可访问 https:&#x2F;&#x2F;&lt;个性名&gt;.github.io</strong></h5><h5 id="就可以进入到你的博客啦"><a href="#就可以进入到你的博客啦" class="headerlink" title="就可以进入到你的博客啦"></a><strong>就可以进入到你的博客啦</strong></h5>
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    
+<div class="article-copyright-info-container">
+    <ul class="copyright-info-content">
+        <li class="post-title">
+            <span class="type">本文标题</span>：<span class="content">网络安全</span>
+        </li>
+        <li class="post-author">
+            <span class="type">本文作者</span>：<span class="content">东东</span>
+        </li>
+        <li class="post-time">
+            <span class="type">创建时间</span>：<span class="content">2023-07-26 09:02:36</span>
+        </li>
+        <li class="post-link">
+            <span class="type">本文链接</span>：<span class="content">2023/07/26/网络安全/</span>
+        </li>
+        <li class="post-license">
+            <span class="type">版权声明</span>：<span class="content">本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！</span>
+        </li>
+    </ul>
+    <div class="copy-copyright-info flex-center tooltip" data-content="复制版权信息" data-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%90%AD%E5%BB%BAHEXO%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.</span> <span class="nav-text">搭建HEXO博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.1.</span> <span class="nav-text">下载</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%8F%90%E5%89%8D%E5%AE%89%E8%A3%85%E5%A5%BD-node-js-https-nodejs-org-en-%E5%B7%A6%E8%BE%B9%E7%9A%84%E9%82%A3%E4%B8%AA"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">1.提前安装好(node.js)[https:&#x2F;&#x2F;nodejs.org&#x2F;en] 左边的那个</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%8F%90%E5%89%8D%E5%AE%89%E8%A3%85%E5%A5%BD-GIt-https-git-scm-com-downloads"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">2.提前安装好(GIt)[https:&#x2F;&#x2F;git-scm.com&#x2F;downloads]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E6%8F%90%E5%89%8D%E6%B3%A8%E5%86%8C%E5%A5%BD%E4%B8%80%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7"><span class="nav-number">1.1.0.3.</span> <span class="nav-text">3.提前注册好一个github账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E5%A6%82%E6%9E%9C%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E6%B2%A1%E6%9C%89%E6%98%BE%E7%A4%BA%EF%BC%8C%E8%AF%B7%E8%87%AA%E8%A1%8C%E6%8C%82%E4%BB%A3%E7%90%86"><span class="nav-number">1.1.0.4.</span> <span class="nav-text">4.如果文章图片没有显示，请自行挂代理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.2.</span> <span class="nav-text">基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E5%85%A5cmd-win-R-%E5%91%BD%E4%BB%A4"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">进入cmd (win+R)命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-g-%E7%94%9F%E6%88%90%E7%BC%96%E8%AF%91%E5%A5%BD%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">hexo g 生成编译好的博客文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-clean-%E6%B8%85%E7%90%86%E7%BC%96%E8%AF%91%E5%A5%BD%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">hexo clean 清理编译好的博客文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-s-%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2%E6%9C%8D%E5%8A%A1"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">hexo s 启动博客服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-deploy-%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.2.0.5.</span> <span class="nav-text">hexo deploy 发布博客</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.3.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85HEXO"><span class="nav-number">1.4.</span> <span class="nav-text">安装HEXO</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%93%E5%BC%80cmd-%E6%89%A7%E8%A1%8C-npm-intall-hexo-g"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">打开cmd,执行 npm intall hexo -g</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Git%E5%85%8B%E9%9A%86"><span class="nav-number">1.4.1.</span> <span class="nav-text">使用Git克隆</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#git-clone-https-github-com-theme-keep-hexo-theme-keep-starter"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-keep&#x2F;hexo-theme-keep-starter&lt;博客名&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.5.</span> <span class="nav-text">进入文件夹</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#cd"><span class="nav-number">1.5.0.1.</span> <span class="nav-text">cd&lt;文件夹&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E6%9E%9C%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E5%A4%AA%E6%85%A2%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E6%B7%98%E5%AE%9D%E6%BA%90%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.6.</span> <span class="nav-text">如果下载速度太慢，可以使用淘宝源下载</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-config-set-registry-https-registry-npm-taobao-org"><span class="nav-number">1.6.0.1.</span> <span class="nav-text">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="nav-number">1.7.</span> <span class="nav-text">安装依赖</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#cd-hexo-theme-keep-starter"><span class="nav-number">1.7.0.1.</span> <span class="nav-text">cd hexo-theme-keep-starter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-install-%E5%AE%89%E8%A3%85"><span class="nav-number">1.7.0.2.</span> <span class="nav-text">npm install  (安装)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8Keep%E6%A8%A1%E6%9D%BF"><span class="nav-number">1.8.</span> <span class="nav-text">启动Keep模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#cd-hexo-theme-keep-starter-1"><span class="nav-number">1.8.0.1.</span> <span class="nav-text">cd hexo-theme-keep-starter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-install-%E5%AE%89%E8%A3%85-1"><span class="nav-number">1.8.0.2.</span> <span class="nav-text">npm install  (安装)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.9.</span> <span class="nav-text">运行项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-run-server%EF%BC%88%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%EF%BC%89"><span class="nav-number">1.9.0.1.</span> <span class="nav-text">npm run server（启动服务）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="nav-number">1.10.</span> <span class="nav-text">编译生成静态文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-run-build"><span class="nav-number">1.10.0.1.</span> <span class="nav-text">npm run build</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="nav-number">1.11.</span> <span class="nav-text">配置主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-run-deploy"><span class="nav-number">1.11.0.1.</span> <span class="nav-text">npm run deploy</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%B7%A5%E5%85%B7"><span class="nav-number">1.12.</span> <span class="nav-text">安装工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Typora%E6%88%96%E8%80%85VScode%EF%BC%8C%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8Typora%EF%BC%8C%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%9B%B4%E5%8A%A0%E6%96%B9%E4%BE%BF%E3%80%82"><span class="nav-number">1.12.0.1.</span> <span class="nav-text">安装Typora或者VScode，建议使用Typora，插入图片更加方便。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%9B%BE%E7%89%87"><span class="nav-number">1.13.</span> <span class="nav-text">配置图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%93%E5%BC%80Typora%EF%BC%8C%E7%82%B9%E5%87%BB%E6%96%87%E4%BB%B6%EF%BC%8C%E8%BF%9B%E5%85%A5%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE%EF%BC%8C%E7%82%B9%E5%87%BB%E5%9B%BE%E5%83%8F-%E5%A6%82%E4%B8%8B%E5%9B%BE%E6%89%80%E7%A4%BA"><span class="nav-number">1.13.0.1.</span> <span class="nav-text">打开Typora，点击文件，进入偏好设置，点击图像 如下图所示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E8%B7%AF%E5%BE%84%E4%B8%BA%E4%B8%8B"><span class="nav-number">1.13.0.2.</span> <span class="nav-text">设置路径为下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#source-images-filename"><span class="nav-number">1.13.0.3.</span> <span class="nav-text">..&#x2F;..&#x2F;source&#x2F;images&#x2F;${filename}</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">1.14.</span> <span class="nav-text">新建文章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E5%85%A5Source%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%EF%BC%8C%E6%89%93%E5%BC%80POST%E6%96%87%E4%BB%B6%EF%BC%8C%E6%89%BE%E5%88%B0-%E5%9C%A8%E6%96%87%E4%BB%B6%E4%B8%8A%E6%96%B9%E5%BC%80%E5%90%AFcmd%EF%BC%8C%E6%89%A7%E8%A1%8Chexo-new-post"><span class="nav-number">1.14.0.1.</span> <span class="nav-text">进入Source文件夹下，打开POST文件，找到&lt;博客名&gt;,在文件上方开启cmd，执行hexo new post&lt;文章标题&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%B3%E5%8F%AF%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0"><span class="nav-number">1.14.0.2.</span> <span class="nav-text">即可开启文章</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E9%83%A8%E7%BD%B2%E4%BF%A1%E6%81%AF"><span class="nav-number">1.15.</span> <span class="nav-text">配置部署信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%9B%E5%85%A5%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E6%89%93%E5%BC%80-config-yml-%E5%9C%A8%E6%9C%80%E5%90%8E%E4%B8%80%E8%A1%8C%E8%BE%93%E5%85%A5%EF%BC%9A"><span class="nav-number">1.15.0.0.1.</span> <span class="nav-text">进入博客文件夹，打开 _config.yml , 在最后一行输入：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2"><span class="nav-number">1.16.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%9B%E5%85%A5%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E6%89%93%E5%BC%80-cmd-%EF%BC%8C%E4%BE%9D%E6%AC%A1%E6%89%A7%E8%A1%8C%EF%BC%9A"><span class="nav-number">1.16.0.0.1.</span> <span class="nav-text">进入博客文件夹，打开 cmd ，依次执行：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E7%BC%96%E8%AF%91%E6%96%87%E4%BB%B6%EF%BC%9Ahexo-g"><span class="nav-number">1.16.0.0.2.</span> <span class="nav-text">生成编译文件：hexo g</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%EF%BC%9Ahexo-deploy"><span class="nav-number">1.16.0.0.3.</span> <span class="nav-text">发布博客：hexo deploy</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E5%AE%8C%E5%90%8E%E7%AD%89%E5%BE%851-2%E5%88%86%E9%92%9F%EF%BC%8C%E5%8D%B3%E5%8F%AF%E8%AE%BF%E9%97%AE-https-github-io"><span class="nav-number">1.16.0.0.4.</span> <span class="nav-text">执行完后等待1-2分钟，即可访问 https:&#x2F;&#x2F;&lt;个性名&gt;.github.io</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B0%B1%E5%8F%AF%E4%BB%A5%E8%BF%9B%E5%85%A5%E5%88%B0%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%95%A6"><span class="nav-number">1.16.0.0.5.</span> <span class="nav-text">就可以进入到你的博客啦</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2020</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">东东</a>
+            
+        </div>
+        
+            <script async data-pjax
+                    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                
+                
+                    总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
