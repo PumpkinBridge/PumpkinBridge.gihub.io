@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Sqli-Labs环境搭建</title>
+    <url>/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="Sqli-Labs环境搭建"><a href="#Sqli-Labs环境搭建" class="headerlink" title="Sqli-Labs环境搭建"></a>Sqli-Labs环境搭建</h1><h4 id="SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"><a href="#SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。" class="headerlink" title="SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"></a><strong>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</strong></h4><p>​       </p>
+<h2 id="SQLI-LAB下载地址："><a href="#SQLI-LAB下载地址：" class="headerlink" title="SQLI-LAB下载地址："></a>SQLI-LAB下载地址：</h2><p><a class="link"   href="https://github.com/Audi-1/sqli-labs" >https://github.com/Audi-1/sqli-labs<i class="fas fa-external-link-alt"></i></a></p>
+<h4 id="点击下载Download-ZIP"><a href="#点击下载Download-ZIP" class="headerlink" title="点击下载Download ZIP"></a><strong>点击下载Download ZIP</strong></h4><p> <img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png"
+                     
+                >   </p>
+<p>​               </p>
+<h2 id="WEB环境搭建"><a href="#WEB环境搭建" class="headerlink" title="WEB环境搭建"></a><strong>WEB环境搭建</strong></h2><h4 id="在安装靶场之前，我们还需要搭建web运行环境："><a href="#在安装靶场之前，我们还需要搭建web运行环境：" class="headerlink" title="在安装靶场之前，我们还需要搭建web运行环境："></a>在安装靶场之前，我们还需要搭建web运行环境：</h4><h4 id="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"><a href="#这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载" class="headerlink" title="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"></a>这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载</h4><h4 id="下载后安装即可。"><a href="#下载后安装即可。" class="headerlink" title="下载后安装即可。"></a>下载后安装即可。</h4><p>​                      </p>
+<h2 id="Sql-labs靶场环境搭建"><a href="#Sql-labs靶场环境搭建" class="headerlink" title="Sql-labs靶场环境搭建"></a><strong>Sql-labs靶场环境搭建</strong></h2><h4 id="安装好phpstudy后打开根目录"><a href="#安装好phpstudy后打开根目录" class="headerlink" title="安装好phpstudy后打开根目录"></a>安装好phpstudy后打开根目录</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA2.png"
+                     
+                ></p>
+<p>​                    </p>
+<h4 id="把刚才下载的压缩包放到根目录下"><a href="#把刚才下载的压缩包放到根目录下" class="headerlink" title="把刚才下载的压缩包放到根目录下"></a>把刚才下载的压缩包放到根目录下</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1.png"
+                     
+                ></p>
+<p>​                         </p>
+<h4 id="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc"><a href="#打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc" class="headerlink" title="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc"></a>打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2.png"
+                     
+                ></p>
+<p>​              </p>
+<h4 id="打开后将-dbpass-‘’改为-dbpass-‘root’并保存"><a href="#打开后将-dbpass-‘’改为-dbpass-‘root’并保存" class="headerlink" title="打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存"></a>打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3.png"
+                     
+                ></p>
+<p>​                     </p>
+<h4 id="完成后打开phpstudy，启动Apache和Mysql"><a href="#完成后打开phpstudy，启动Apache和Mysql" class="headerlink" title="完成后打开phpstudy，启动Apache和Mysql"></a>完成后打开phpstudy，启动Apache和Mysql</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/4.png"
+                     
+                ></p>
+<p>​               </p>
+<h4 id="接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页"><a href="#接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页" class="headerlink" title="接着浏览器打开“http://127.0.0.1/sqli-labs-master/”访问首页"></a>接着浏览器打开“<a class="link"   href="http://127.0.0.1/sqli-labs-master/%E2%80%9D%E8%AE%BF%E9%97%AE%E9%A6%96%E9%A1%B5" >http://127.0.0.1/sqli-labs-master/”访问首页<i class="fas fa-external-link-alt"></i></a></h4><h4 id="打开以后图示如下"><a href="#打开以后图示如下" class="headerlink" title="打开以后图示如下"></a>打开以后图示如下</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/5.png"
+                     
+                ></p>
+<p>​           </p>
+<h4 id="先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面"><a href="#先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面" class="headerlink" title="先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面"></a>先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/6.png"
+                     
+                ></p>
+<h4 id="到这里基本上就完成Sqli-Labs的搭建啦"><a href="#到这里基本上就完成Sqli-Labs的搭建啦" class="headerlink" title="到这里基本上就完成Sqli-Labs的搭建啦~"></a>到这里基本上就完成Sqli-Labs的搭建啦~</h4><h4 id="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"><a href="#这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！" class="headerlink" title="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"></a>这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！</h4><h4 id="谢谢观看"><a href="#谢谢观看" class="headerlink" title="谢谢观看~"></a>谢谢观看~</h4>]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>吃货日记</title>
     <url>/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="我们的吃货日记"><a href="#我们的吃货日记" class="headerlink" title="我们的吃货日记"></a>我们的吃货日记</h1><p>​               </p>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="东东">
+    
+    <title>
+        
+            Sqli-Labs环境搭建 |
+        
+        HX的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.png">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066cc","logo":"/images/logo.png","favicon":"/images/logo.png","avatar":"/images/avatar.png","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"header_transparent":false,"background_img":"/images/bg.svg","description":"人生何处不青山","font_color":null,"hitokoto":false},"scroll":{"progress_bar":true,"percent":false}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"obsidian"},"side_tools":{},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.8"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":true,"wordcount":true,"min2read":true},"img_align":"left","copyright_info":true},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.png">
+                </a>
+            
+            <a class="logo-title" href="/">
+               HX的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">Sqli-Labs环境搭建</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">东东</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-07-26 20:00:57</span>
+        <span class="mobile">2023-07-26 20:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-07-26 20:30:51</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>480 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id="Sqli-Labs环境搭建"><a href="#Sqli-Labs环境搭建" class="headerlink" title="Sqli-Labs环境搭建"></a>Sqli-Labs环境搭建</h1><h4 id="SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"><a href="#SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。" class="headerlink" title="SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"></a><strong>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</strong></h4><p>​       </p>
+<h2 id="SQLI-LAB下载地址："><a href="#SQLI-LAB下载地址：" class="headerlink" title="SQLI-LAB下载地址："></a>SQLI-LAB下载地址：</h2><p><a class="link"   target="_blank" rel="noopener" href="https://github.com/Audi-1/sqli-labs" >https://github.com/Audi-1/sqli-labs<i class="fas fa-external-link-alt"></i></a></p>
+<h4 id="点击下载Download-ZIP"><a href="#点击下载Download-ZIP" class="headerlink" title="点击下载Download ZIP"></a><strong>点击下载Download ZIP</strong></h4><p> <img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png"
+                     
+                >   </p>
+<p>​               </p>
+<h2 id="WEB环境搭建"><a href="#WEB环境搭建" class="headerlink" title="WEB环境搭建"></a><strong>WEB环境搭建</strong></h2><h4 id="在安装靶场之前，我们还需要搭建web运行环境："><a href="#在安装靶场之前，我们还需要搭建web运行环境：" class="headerlink" title="在安装靶场之前，我们还需要搭建web运行环境："></a>在安装靶场之前，我们还需要搭建web运行环境：</h4><h4 id="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"><a href="#这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载" class="headerlink" title="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"></a>这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载</h4><h4 id="下载后安装即可。"><a href="#下载后安装即可。" class="headerlink" title="下载后安装即可。"></a>下载后安装即可。</h4><p>​                      </p>
+<h2 id="Sql-labs靶场环境搭建"><a href="#Sql-labs靶场环境搭建" class="headerlink" title="Sql-labs靶场环境搭建"></a><strong>Sql-labs靶场环境搭建</strong></h2><h4 id="安装好phpstudy后打开根目录"><a href="#安装好phpstudy后打开根目录" class="headerlink" title="安装好phpstudy后打开根目录"></a>安装好phpstudy后打开根目录</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA2.png"
+                     
+                ></p>
+<p>​                    </p>
+<h4 id="把刚才下载的压缩包放到根目录下"><a href="#把刚才下载的压缩包放到根目录下" class="headerlink" title="把刚才下载的压缩包放到根目录下"></a>把刚才下载的压缩包放到根目录下</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1.png"
+                     
+                ></p>
+<p>​                         </p>
+<h4 id="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc"><a href="#打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc" class="headerlink" title="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc"></a>打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2.png"
+                     
+                ></p>
+<p>​              </p>
+<h4 id="打开后将-dbpass-‘’改为-dbpass-‘root’并保存"><a href="#打开后将-dbpass-‘’改为-dbpass-‘root’并保存" class="headerlink" title="打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存"></a>打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3.png"
+                     
+                ></p>
+<p>​                     </p>
+<h4 id="完成后打开phpstudy，启动Apache和Mysql"><a href="#完成后打开phpstudy，启动Apache和Mysql" class="headerlink" title="完成后打开phpstudy，启动Apache和Mysql"></a>完成后打开phpstudy，启动Apache和Mysql</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/4.png"
+                     
+                ></p>
+<p>​               </p>
+<h4 id="接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页"><a href="#接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页" class="headerlink" title="接着浏览器打开“http://127.0.0.1/sqli-labs-master/”访问首页"></a>接着浏览器打开“<a class="link"   target="_blank" rel="noopener" href="http://127.0.0.1/sqli-labs-master/%E2%80%9D%E8%AE%BF%E9%97%AE%E9%A6%96%E9%A1%B5" >http://127.0.0.1/sqli-labs-master/”访问首页<i class="fas fa-external-link-alt"></i></a></h4><h4 id="打开以后图示如下"><a href="#打开以后图示如下" class="headerlink" title="打开以后图示如下"></a>打开以后图示如下</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/5.png"
+                     
+                ></p>
+<p>​           </p>
+<h4 id="先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面"><a href="#先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面" class="headerlink" title="先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面"></a>先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/6.png"
+                     
+                ></p>
+<h4 id="到这里基本上就完成Sqli-Labs的搭建啦"><a href="#到这里基本上就完成Sqli-Labs的搭建啦" class="headerlink" title="到这里基本上就完成Sqli-Labs的搭建啦~"></a>到这里基本上就完成Sqli-Labs的搭建啦~</h4><h4 id="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"><a href="#这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！" class="headerlink" title="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"></a>这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！</h4><h4 id="谢谢观看"><a href="#谢谢观看" class="headerlink" title="谢谢观看~"></a>谢谢观看~</h4>
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    
+<div class="article-copyright-info-container">
+    <ul class="copyright-info-content">
+        <li class="post-title">
+            <span class="type">本文标题</span>：<span class="content">Sqli-Labs环境搭建</span>
+        </li>
+        <li class="post-author">
+            <span class="type">本文作者</span>：<span class="content">东东</span>
+        </li>
+        <li class="post-time">
+            <span class="type">创建时间</span>：<span class="content">2023-07-26 20:00:57</span>
+        </li>
+        <li class="post-link">
+            <span class="type">本文链接</span>：<span class="content">2023/07/26/Sqli-Labs环境搭建/</span>
+        </li>
+        <li class="post-license">
+            <span class="type">版权声明</span>：<span class="content">本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！</span>
+        </li>
+    </ul>
+    <div class="copy-copyright-info flex-center tooltip" data-content="复制版权信息" data-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">吃货日记</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">1.</span> <span class="nav-text">Sqli-Labs环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#SQLI%EF%BC%8Csql-injection%EF%BC%8C%E6%88%91%E4%BB%AC%E7%A7%B0%E4%B9%8B%E4%B8%BAsql%E6%B3%A8%E5%85%A5%E3%80%82%E4%BD%95%E4%B8%BAsql%EF%BC%8C%E8%8B%B1%E6%96%87%EF%BC%9AStructured-Query-Language%EF%BC%8C%E5%8F%AB%E5%81%9A%E7%BB%93%E6%9E%84%E5%8C%96%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80%E3%80%82%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%89MySQL%EF%BC%8CMS-SQL-Oracle%E4%BB%A5%E5%8F%8APostgresql%E3%80%82Sql%E8%AF%AD%E8%A8%80%E5%B0%B1%E6%98%AF%E6%88%91%E4%BB%AC%E5%9C%A8%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%B6%E7%94%A8%E5%88%B0%E7%9A%84%E4%B8%80%E7%A7%8D%E3%80%82%E5%9C%A8%E6%88%91%E4%BB%AC%E7%9A%84%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8sql%E8%AF%AD%E5%8F%A5%E8%BF%9B%E8%A1%8C%E7%AE%A1%E7%90%86%E5%BA%94%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%B6%EF%BC%8C%E5%BE%80%E5%BE%80%E9%87%87%E7%94%A8%E6%8B%BC%E6%8E%A5%E7%9A%84%E6%96%B9%E5%BC%8F%E5%BD%A2%E6%88%90%E4%B8%80%E6%9D%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%AD%E8%A8%80%EF%BC%8C%E8%80%8C%E5%8D%B1%E9%99%A9%E7%9A%84%E6%98%AF%EF%BC%8C%E5%9C%A8%E6%8B%BC%E6%8E%A5sql%E8%AF%AD%E5%8F%A5%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E6%94%B9%E5%8F%98sql%E8%AF%AD%E5%8F%A5%E3%80%82%E4%BB%8E%E8%80%8C%E8%AE%A9%E6%95%B0%E6%8D%AE%E6%89%A7%E8%A1%8C%E6%88%91%E4%BB%AC%E6%83%B3%E8%A6%81%E6%89%A7%E8%A1%8C%E7%9A%84%E8%AF%AD%E5%8F%A5%EF%BC%8C%E8%BF%99%E5%B0%B1%E6%98%AF%E6%88%91%E4%BB%AC%E5%B8%B8%E8%AF%B4%E7%9A%84sql%E6%B3%A8%E5%85%A5%E3%80%82%E8%80%8CSqli-labs%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%B0%E5%BA%A6%E7%A8%8B%E5%BA%8F%E5%91%98%E5%86%99%E7%9A%84%EF%BC%8C%E7%94%A8%E6%9D%A5%E5%AD%A6%E4%B9%A0sql%E6%B3%A8%E5%85%A5%E7%9A%84%E4%B8%80%E4%B8%AA%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B%E3%80%82"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLI-LAB%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">SQLI-LAB下载地址：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BDDownload-ZIP"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">点击下载Download ZIP</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WEB%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">1.2.</span> <span class="nav-text">WEB环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8%E5%AE%89%E8%A3%85%E9%9D%B6%E5%9C%BA%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%88%91%E4%BB%AC%E8%BF%98%E9%9C%80%E8%A6%81%E6%90%AD%E5%BB%BAweb%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">在安装靶场之前，我们还需要搭建web运行环境：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%99%E9%87%8C%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8phpstudy%E8%BF%9B%E8%A1%8C%E6%90%AD%E5%BB%BA%EF%BC%8CphpStudy%E6%98%AF%E4%B8%80%E4%B8%AAPHP%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%E7%9A%84%E7%A8%8B%E5%BA%8F%E9%9B%86%E6%88%90%E5%8C%85%E3%80%82%E5%AE%89%E8%A3%85%E5%90%8E%E4%B8%80%E9%94%AE%E5%90%AF%E5%8A%A8%E5%8D%B3%E5%8F%AF%E8%BF%90%E8%A1%8Cweb%E7%8E%AF%E5%A2%83%EF%BC%9AWindows%E7%89%88phpstudy%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%90%8E%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">下载后安装即可。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sql-labs%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">1.3.</span> <span class="nav-text">Sql-labs靶场环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%A5%BDphpstudy%E5%90%8E%E6%89%93%E5%BC%80%E6%A0%B9%E7%9B%AE%E5%BD%95"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">安装好phpstudy后打开根目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%8A%E5%88%9A%E6%89%8D%E4%B8%8B%E8%BD%BD%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%94%BE%E5%88%B0%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B"><span class="nav-number">1.3.0.2.</span> <span class="nav-text">把刚才下载的压缩包放到根目录下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%93%E5%BC%80sqli-labs-master%E5%9C%A8%E9%87%8C%E9%9D%A2%E4%B8%AD%E6%89%BE%E5%88%B0sqli-connections%E5%B9%B6%E4%BB%A5%E8%AE%B0%E4%BA%8B%E6%9C%AC%E7%9A%84%E6%96%B9%E5%BC%8F%E6%89%93%E5%BC%80db-creds-inc"><span class="nav-number">1.3.0.3.</span> <span class="nav-text">打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%93%E5%BC%80%E5%90%8E%E5%B0%86-dbpass-%E2%80%98%E2%80%99%E6%94%B9%E4%B8%BA-dbpass-%E2%80%98root%E2%80%99%E5%B9%B6%E4%BF%9D%E5%AD%98"><span class="nav-number">1.3.0.4.</span> <span class="nav-text">打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%8C%E6%88%90%E5%90%8E%E6%89%93%E5%BC%80phpstudy%EF%BC%8C%E5%90%AF%E5%8A%A8Apache%E5%92%8CMysql"><span class="nav-number">1.3.0.5.</span> <span class="nav-text">完成后打开phpstudy，启动Apache和Mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A5%E7%9D%80%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%BC%80%E2%80%9Chttp-127-0-0-1-sqli-labs-master-%E2%80%9D%E8%AE%BF%E9%97%AE%E9%A6%96%E9%A1%B5"><span class="nav-number">1.3.0.6.</span> <span class="nav-text">接着浏览器打开“http:&#x2F;&#x2F;127.0.0.1&#x2F;sqli-labs-master&#x2F;”访问首页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%93%E5%BC%80%E4%BB%A5%E5%90%8E%E5%9B%BE%E7%A4%BA%E5%A6%82%E4%B8%8B"><span class="nav-number">1.3.0.7.</span> <span class="nav-text">打开以后图示如下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%88%E7%82%B9%E5%87%BBSetup-reset-Database-for-labs%E4%BD%BF%E5%85%B6%E8%87%AA%E5%8A%A8%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%B9%B6%E5%A1%AB%E5%85%85%E6%95%B0%E6%8D%AE%E5%90%8E%E6%98%AF%E8%BF%99%E6%A0%B7%E7%9A%84%E9%A1%B5%E9%9D%A2"><span class="nav-number">1.3.0.8.</span> <span class="nav-text">先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%B0%E8%BF%99%E9%87%8C%E5%9F%BA%E6%9C%AC%E4%B8%8A%E5%B0%B1%E5%AE%8C%E6%88%90Sqli-Labs%E7%9A%84%E6%90%AD%E5%BB%BA%E5%95%A6"><span class="nav-number">1.3.0.9.</span> <span class="nav-text">到这里基本上就完成Sqli-Labs的搭建啦~</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%99%E4%B8%AA%E9%9D%B6%E5%9C%BA%E8%BF%98%E6%98%AF%E5%BE%88%E4%B8%8D%E9%94%99%E7%9A%84%EF%BC%8C%E5%AF%B9%E4%BA%8E%E9%9C%80%E8%A6%81%E7%BB%83%E4%B9%A0Sql%E6%B3%A8%E5%85%A5%E7%9A%84%E5%B0%8F%E4%BC%99%E4%BC%B4%E4%BB%AC%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%A4%9A%E5%A4%9A%E7%BB%83%E4%B9%A0%EF%BC%8C%E7%A5%9D%E5%90%84%E4%BD%8D%E5%A4%A7%E4%BD%AC%E6%97%A9%E6%97%A5%E9%80%9A%E5%85%B3%EF%BC%81%EF%BC%81"><span class="nav-number">1.3.0.10.</span> <span class="nav-text">这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%A2%E8%B0%A2%E8%A7%82%E7%9C%8B"><span class="nav-number">1.3.0.11.</span> <span class="nav-text">谢谢观看~</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2020</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">东东</a>
+            
+        </div>
+        
+            <script async data-pjax
+                    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                
+                
+                    总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
