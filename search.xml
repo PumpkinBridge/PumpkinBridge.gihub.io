@@ -44,32 +44,6 @@
       </tags>
   </entry>
   <entry>
-    <title>吃货日记</title>
-    <url>/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="我们的吃货日记"><a href="#我们的吃货日记" class="headerlink" title="我们的吃货日记"></a>我们的吃货日记</h1><p>​               </p>
-<h4 id="赞不绝口的小龙虾"><a href="#赞不绝口的小龙虾" class="headerlink" title="赞不绝口的小龙虾"></a><div style="color: green">赞不绝口的小龙虾</div></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A71.jpg"
-                     
-                ></p>
-<p>​             </p>
-<p>​                               </p>
-<h4 id="物美价廉的榴莲"><a href="#物美价廉的榴莲" class="headerlink" title="物美价廉的榴莲"></a><strong><div style="color:red">物美价廉的榴莲</div></strong></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A72.jpg"
-                     
-                ></p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>吃货日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Sqli-Labs环境搭建</title>
     <url>/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="Sqli-Labs环境搭建"><a href="#Sqli-Labs环境搭建" class="headerlink" title="Sqli-Labs环境搭建"></a>Sqli-Labs环境搭建</h1><h4 id="SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"><a href="#SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。" class="headerlink" title="SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"></a><strong>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</strong></h4><p>​       </p>
@@ -136,6 +110,32 @@
       </categories>
       <tags>
         <tag>渗透测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吃货日记</title>
+    <url>/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="我们的吃货日记"><a href="#我们的吃货日记" class="headerlink" title="我们的吃货日记"></a>我们的吃货日记</h1><p>​               </p>
+<h4 id="赞不绝口的小龙虾"><a href="#赞不绝口的小龙虾" class="headerlink" title="赞不绝口的小龙虾"></a><div style="color: green">赞不绝口的小龙虾</div></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A71.jpg"
+                     
+                ></p>
+<p>​             </p>
+<p>​                               </p>
+<h4 id="物美价廉的榴莲"><a href="#物美价廉的榴莲" class="headerlink" title="物美价廉的榴莲"></a><strong><div style="color:red">物美价廉的榴莲</div></strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A72.jpg"
+                     
+                ></p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>吃货日记</tag>
       </tags>
   </entry>
   <entry>
