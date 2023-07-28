@@ -96,7 +96,7 @@
       </tags>
   </entry>
   <entry>
-    <title>网络安全</title>
+    <title>HEXO博客搭建</title>
     <url>/2023/07/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</url>
     <content><![CDATA[<h1 id="搭建HEXO博客"><a href="#搭建HEXO博客" class="headerlink" title="搭建HEXO博客"></a>搭建HEXO博客</h1><p>​                                                   </p>
 <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a><strong>下载</strong></h2><h4 id="1-提前安装好-node-js-https-nodejs-org-en-左边的那个"><a href="#1-提前安装好-node-js-https-nodejs-org-en-左边的那个" class="headerlink" title="1.提前安装好(node.js)[https://nodejs.org/en] 左边的那个"></a><strong>1.提前安装好(node.js)[<a class="link"   href="https://nodejs.org/en]" >https://nodejs.org/en]<i class="fas fa-external-link-alt"></i></a> 左边的那个</strong></h4><h4 id="2-提前安装好-GIt-https-git-scm-com-downloads"><a href="#2-提前安装好-GIt-https-git-scm-com-downloads" class="headerlink" title="2.提前安装好(GIt)[https://git-scm.com/downloads]"></a><strong>2.提前安装好(GIt)[<a class="link"   href="https://git-scm.com/downloads]" >https://git-scm.com/downloads]<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="3-提前注册好一个github账号"><a href="#3-提前注册好一个github账号" class="headerlink" title="3.提前注册好一个github账号"></a><strong>3.提前注册好一个github账号</strong></h4><h4 id="4-如果文章图片没有显示，请自行挂代理"><a href="#4-如果文章图片没有显示，请自行挂代理" class="headerlink" title="4.如果文章图片没有显示，请自行挂代理"></a><strong>4.如果文章图片没有显示，请自行挂代理</strong></h4><p>​                                   </p>
