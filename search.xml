@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Nmap搭建及使用</title>
+    <url>/2023/07/28/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Nmap搭建及使用"><a href="#Nmap搭建及使用" class="headerlink" title="Nmap搭建及使用"></a>Nmap搭建及使用</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><h5 id="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。"><a href="#从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。" class="headerlink" title="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。"></a><strong>从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。</strong></h5><h5 id="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"><a href="#为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。" class="headerlink" title="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"></a><strong>为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。</strong></h5><p>​                </p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a><strong>功能</strong></h3><h4 id="1-主机探测"><a href="#1-主机探测" class="headerlink" title="1.主机探测"></a><strong>1.主机探测</strong></h4><h4 id="2-端口扫描"><a href="#2-端口扫描" class="headerlink" title="2.端口扫描"></a><strong>2.<a class="link"   href="https://so.csdn.net/so/search?q=%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F&spm=1001.2101.3001.7020" >端口扫描<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="3-版本检测"><a href="#3-版本检测" class="headerlink" title="3.版本检测"></a><strong>3.版本检测</strong></h4><h4 id="4-支持探测脚本的编写"><a href="#4-支持探测脚本的编写" class="headerlink" title="4.支持探测脚本的编写"></a><strong>4.支持探测脚本的编写</strong></h4><p>​     </p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h3><h4 id="首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。"><a href="#首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。" class="headerlink" title="首先访问Nmap官网:http://nmap.org，获得windows对应版本的安装包。"></a><strong>首先访问Nmap官网:<a class="link"   href="http://nmap.org,获得windows对应版本的安装包./" >http://nmap.org，获得windows对应版本的安装包。<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法"><a href="#因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法" class="headerlink" title="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~"></a><strong>因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~</strong></h4><h4 id="下载对应安装包后，点击安装，根据提示-一直安装即可。"><a href="#下载对应安装包后，点击安装，根据提示-一直安装即可。" class="headerlink" title="下载对应安装包后，点击安装，根据提示,一直安装即可。"></a><strong>下载对应安装包后，点击安装，根据提示,一直安装即可。</strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/1.png"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/2.png"
+                     
+                ></p>
+<h4 id="选择并更改安装路径，点击安装"><a href="#选择并更改安装路径，点击安装" class="headerlink" title="选择并更改安装路径，点击安装"></a><strong>选择并更改安装路径，点击安装</strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/3.png"
+                     
+                ></p>
+<h4 id="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"><a href="#安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件" class="headerlink" title="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"></a><strong>安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件</strong></h4><p>​            </p>
+<h3 id="Nmap的基本命令以及扫描类型"><a href="#Nmap的基本命令以及扫描类型" class="headerlink" title="Nmap的基本命令以及扫描类型"></a><strong>Nmap的基本命令</strong>以及扫描类型</h3><p>  <strong>Intense scan                  nmap -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan plus UDP         nmap -sS -sU -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan, all TCP ports   nmap -p 1-65535 -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan, no ping         nmap -T4 -A -v -Pn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Ping scan                     nmap -sn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick scan                    nmap -T4 -F <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick scan plus               nmap -sV -T4 -O -F --version-light <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick traceroute              nmap -sn --traceroute <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Regular scan                  nmap <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Slow comprehensive scan       nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script &quot;default or (discovery and safe)&quot; <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>​                     </p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><h4 id="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"><a href="#Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。" class="headerlink" title="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"></a><strong>Nmap是一个很好的网络探测和安全审核的工具</strong>，<strong>Nmap可以用于扫描互联网上大规模的计算机。</strong></h4><h4 id="支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。"><a href="#支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。" class="headerlink" title="支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。"></a><strong>支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。</strong></h4><h4 id="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"><a href="#目前Nmap已经被成千上万的安全专家列为必备的工具之一。" class="headerlink" title="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"></a><strong>目前Nmap已经被成千上万的安全专家列为必备的工具之一。</strong></h4><h4 id="希望这篇文章对大家能够起到帮助！"><a href="#希望这篇文章对大家能够起到帮助！" class="headerlink" title="希望这篇文章对大家能够起到帮助！"></a><strong>希望这篇文章对大家能够起到帮助！</strong></h4>]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Sqli-Labs环境搭建</title>
     <url>/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="Sqli-Labs环境搭建"><a href="#Sqli-Labs环境搭建" class="headerlink" title="Sqli-Labs环境搭建"></a>Sqli-Labs环境搭建</h1><h4 id="SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"><a href="#SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。" class="headerlink" title="SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"></a><strong>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</strong></h4><p>​       </p>
@@ -70,32 +113,6 @@
       </tags>
   </entry>
   <entry>
-    <title>吃货日记</title>
-    <url>/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="我们的吃货日记"><a href="#我们的吃货日记" class="headerlink" title="我们的吃货日记"></a>我们的吃货日记</h1><p>​               </p>
-<h4 id="赞不绝口的小龙虾"><a href="#赞不绝口的小龙虾" class="headerlink" title="赞不绝口的小龙虾"></a><div style="color: green">赞不绝口的小龙虾</div></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A71.jpg"
-                     
-                ></p>
-<p>​             </p>
-<p>​                               </p>
-<h4 id="物美价廉的榴莲"><a href="#物美价廉的榴莲" class="headerlink" title="物美价廉的榴莲"></a><strong><div style="color:red">物美价廉的榴莲</div></strong></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A72.jpg"
-                     
-                ></p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>吃货日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HEXO博客搭建</title>
     <url>/2023/07/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</url>
     <content><![CDATA[<h1 id="搭建HEXO博客"><a href="#搭建HEXO博客" class="headerlink" title="搭建HEXO博客"></a>搭建HEXO博客</h1><p>​                                                   </p>
@@ -148,6 +165,32 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吃货日记</title>
+    <url>/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="我们的吃货日记"><a href="#我们的吃货日记" class="headerlink" title="我们的吃货日记"></a>我们的吃货日记</h1><p>​               </p>
+<h4 id="赞不绝口的小龙虾"><a href="#赞不绝口的小龙虾" class="headerlink" title="赞不绝口的小龙虾"></a><div style="color: green">赞不绝口的小龙虾</div></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A71.jpg"
+                     
+                ></p>
+<p>​             </p>
+<p>​                               </p>
+<h4 id="物美价廉的榴莲"><a href="#物美价廉的榴莲" class="headerlink" title="物美价廉的榴莲"></a><strong><div style="color:red">物美价廉的榴莲</div></strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A72.jpg"
+                     
+                ></p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>吃货日记</tag>
       </tags>
   </entry>
 </search>
