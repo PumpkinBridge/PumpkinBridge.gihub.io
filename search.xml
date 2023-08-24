@@ -90,6 +90,49 @@
       </tags>
   </entry>
   <entry>
+    <title>Nmap搭建及使用</title>
+    <url>/2023/07/28/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Nmap搭建及使用"><a href="#Nmap搭建及使用" class="headerlink" title="Nmap搭建及使用"></a>Nmap搭建及使用</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><h5 id="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。"><a href="#从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。" class="headerlink" title="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。"></a><strong>从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。</strong></h5><h5 id="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"><a href="#为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。" class="headerlink" title="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"></a><strong>为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。</strong></h5><p>​                </p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a><strong>功能</strong></h3><h4 id="1-主机探测"><a href="#1-主机探测" class="headerlink" title="1.主机探测"></a><strong>1.主机探测</strong></h4><h4 id="2-端口扫描"><a href="#2-端口扫描" class="headerlink" title="2.端口扫描"></a><strong>2.<a class="link"   href="https://so.csdn.net/so/search?q=%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F&spm=1001.2101.3001.7020" >端口扫描<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="3-版本检测"><a href="#3-版本检测" class="headerlink" title="3.版本检测"></a><strong>3.版本检测</strong></h4><h4 id="4-支持探测脚本的编写"><a href="#4-支持探测脚本的编写" class="headerlink" title="4.支持探测脚本的编写"></a><strong>4.支持探测脚本的编写</strong></h4><p>​     </p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h3><h4 id="首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。"><a href="#首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。" class="headerlink" title="首先访问Nmap官网:http://nmap.org，获得windows对应版本的安装包。"></a><strong>首先访问Nmap官网:<a class="link"   href="http://nmap.org,获得windows对应版本的安装包./" >http://nmap.org，获得windows对应版本的安装包。<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法"><a href="#因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法" class="headerlink" title="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~"></a><strong>因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~</strong></h4><h4 id="下载对应安装包后，点击安装，根据提示-一直安装即可。"><a href="#下载对应安装包后，点击安装，根据提示-一直安装即可。" class="headerlink" title="下载对应安装包后，点击安装，根据提示,一直安装即可。"></a><strong>下载对应安装包后，点击安装，根据提示,一直安装即可。</strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/1.png"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/2.png"
+                     
+                ></p>
+<h4 id="选择并更改安装路径，点击安装"><a href="#选择并更改安装路径，点击安装" class="headerlink" title="选择并更改安装路径，点击安装"></a><strong>选择并更改安装路径，点击安装</strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/3.png"
+                     
+                ></p>
+<h4 id="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"><a href="#安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件" class="headerlink" title="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"></a><strong>安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件</strong></h4><p>​            </p>
+<h3 id="Nmap的基本命令以及扫描类型"><a href="#Nmap的基本命令以及扫描类型" class="headerlink" title="Nmap的基本命令以及扫描类型"></a><strong>Nmap的基本命令</strong>以及扫描类型</h3><p>  <strong>Intense scan                  nmap -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan plus UDP         nmap -sS -sU -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan, all TCP ports   nmap -p 1-65535 -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan, no ping         nmap -T4 -A -v -Pn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Ping scan                     nmap -sn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick scan                    nmap -T4 -F <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick scan plus               nmap -sV -T4 -O -F --version-light <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick traceroute              nmap -sn --traceroute <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Regular scan                  nmap <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Slow comprehensive scan       nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script &quot;default or (discovery and safe)&quot; <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>​                     </p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><h4 id="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"><a href="#Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。" class="headerlink" title="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"></a><strong>Nmap是一个很好的网络探测和安全审核的工具</strong>，<strong>Nmap可以用于扫描互联网上大规模的计算机。</strong></h4><h4 id="支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。"><a href="#支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。" class="headerlink" title="支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。"></a><strong>支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。</strong></h4><h4 id="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"><a href="#目前Nmap已经被成千上万的安全专家列为必备的工具之一。" class="headerlink" title="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"></a><strong>目前Nmap已经被成千上万的安全专家列为必备的工具之一。</strong></h4><h4 id="希望这篇文章对大家能够起到帮助！"><a href="#希望这篇文章对大家能够起到帮助！" class="headerlink" title="希望这篇文章对大家能够起到帮助！"></a><strong>希望这篇文章对大家能够起到帮助！</strong></h4>]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>渗透测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HEXO博客搭建</title>
     <url>/2023/07/26/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="搭建HEXO博客"><a href="#搭建HEXO博客" class="headerlink" title="搭建HEXO博客"></a>搭建HEXO博客</h1><p>​                                                   </p>
@@ -145,41 +188,101 @@
       </tags>
   </entry>
   <entry>
-    <title>Nmap搭建及使用</title>
-    <url>/2023/07/28/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Nmap搭建及使用"><a href="#Nmap搭建及使用" class="headerlink" title="Nmap搭建及使用"></a>Nmap搭建及使用</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><h5 id="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。"><a href="#从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。" class="headerlink" title="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。"></a><strong>从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。</strong></h5><h5 id="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"><a href="#为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。" class="headerlink" title="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"></a><strong>为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。</strong></h5><p>​                </p>
-<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a><strong>功能</strong></h3><h4 id="1-主机探测"><a href="#1-主机探测" class="headerlink" title="1.主机探测"></a><strong>1.主机探测</strong></h4><h4 id="2-端口扫描"><a href="#2-端口扫描" class="headerlink" title="2.端口扫描"></a><strong>2.<a class="link"   href="https://so.csdn.net/so/search?q=%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F&spm=1001.2101.3001.7020" >端口扫描<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="3-版本检测"><a href="#3-版本检测" class="headerlink" title="3.版本检测"></a><strong>3.版本检测</strong></h4><h4 id="4-支持探测脚本的编写"><a href="#4-支持探测脚本的编写" class="headerlink" title="4.支持探测脚本的编写"></a><strong>4.支持探测脚本的编写</strong></h4><p>​     </p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h3><h4 id="首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。"><a href="#首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。" class="headerlink" title="首先访问Nmap官网:http://nmap.org，获得windows对应版本的安装包。"></a><strong>首先访问Nmap官网:<a class="link"   href="http://nmap.org,获得windows对应版本的安装包./" >http://nmap.org，获得windows对应版本的安装包。<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法"><a href="#因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法" class="headerlink" title="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~"></a><strong>因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~</strong></h4><h4 id="下载对应安装包后，点击安装，根据提示-一直安装即可。"><a href="#下载对应安装包后，点击安装，根据提示-一直安装即可。" class="headerlink" title="下载对应安装包后，点击安装，根据提示,一直安装即可。"></a><strong>下载对应安装包后，点击安装，根据提示,一直安装即可。</strong></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/1.png"
-                     
-                ></p>
+    <title>UDF提权</title>
+    <url>/2023/08/21/UDF%E6%8F%90%E6%9D%83/</url>
+    <content><![CDATA[<h1>UFD提权</h1>
+
+<p><strong>一、什么是udf</strong></p>
+<p><strong>udf 全称为：user defined function，意为用户自定义函数；用户可以添加自定义的新函数到Mysql中，以达到功能的扩充，调用方式与一般系统自带的函数相同，例如 contact()，user()，version()等函数。</strong></p>
+<p><strong>udf 文件后缀一般为 dll，由C、C++编写</strong></p>
+<p><strong>二、udf在渗透中的作用</strong></p>
+<p><strong>在一般渗透过程中，拿下一台windows服务器的webshell时，由于webshell权限较低，有些操作无法进行，而此时本地恰好存在mysql数据库，那么udf可能就派上用场了；由于windows安装的mysql进程一般都拥有管理员权限，这就意味着用户自定义的函数也拥有管理员权限，我们也就拥有了执行管理员命令的权限，这时新建管理员用户等操作也就轻而易举了，大多数人称为这一操作为udf提权，其实表达不够准确，应该称为通过mysql获得管理员权限。</strong></p>
+<h1 id="三、利用条件"><a href="#三、利用条件" class="headerlink" title="三、利用条件"></a><strong>三、利用条件</strong></h1><p><strong>利用udf的条件其实还是挺苛刻的</strong></p>
+<p><strong>mysql用户权限问题</strong></p>
+<p><strong>获得一个数据库账号，拥有对MySQL的insert和delete权限。以root为佳。</strong></p>
+<p><strong>拥有将udf.dll写入相应目录的权限。</strong></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="四、数据库版本问题"><a href="#四、数据库版本问题" class="headerlink" title="四、数据库版本问题"></a><strong>四、数据库版本问题</strong></h1><p><strong>udf利用的其中一步，是要将我们的xxx.dll文件上传到mysql检索目录中，mysql各版本的检索目录有所不同：</strong></p>
+<p><strong>版本	路径</strong></p>
+<p><strong>MySQL &lt; 5.0	导出路径随意；</strong></p>
+<p><strong>5.0 &lt;&#x3D; MySQL&lt; 5.1	需要导出至目标服务器的系统目录（如：c:&#x2F;windows&#x2F;system32&#x2F;）</strong></p>
+<p><strong>5.1 &lt; MySQL	必须导出到MySQL安装目录下的lib\plugin文件夹下</strong></p>
+<p><strong>五、本地利用过程</strong></p>
+<p><strong>1、获取Mysql安装路径</strong></p>
+<p><strong>2、select @basedir</strong></p>
+<p><strong>查看可操作路径</strong></p>
+<p><strong>show global variables like “%secure%”</strong></p>
+<p><strong>secure_file_priv值为null，表示mysql不允许导入导出，此时我们只能通过别的方法将udf.dll写入安装路径</strong></p>
+<p><strong>3、查看plugin目录路径</strong></p>
+<p><strong>select @@plugin_dir</strong></p>
+<p><strong>4、将dll上传方式推荐几种</strong></p>
+<p><strong>将dll上传到安装路径的方式：</strong></p>
+<p><strong>通过webshell上传</strong></p>
+<p><strong>以hex方式直接上传</strong></p>
+<p><strong>sqlmap中现有的udf文件，分为32位和64位，一定要选择对版本，获取sqlmap的udf方式</strong></p>
+<p><strong>5、sqlmap中udf获取方式</strong></p>
+<p><strong>自动化注入工具Sqlmap已经集成了此功能。</strong></p>
+<p><strong>在 \sqlmap\data\udf\mysql\windows\64目录下存放着lib_mysqludf_sys.dll_</strong></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/2.png"
-                     
+                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091127823.png"
+                      alt="image-20230821091127823"
                 ></p>
-<h4 id="选择并更改安装路径，点击安装"><a href="#选择并更改安装路径，点击安装" class="headerlink" title="选择并更改安装路径，点击安装"></a><strong>选择并更改安装路径，点击安装</strong></h4><p><img  
+<p><strong>可以利用sqlmap 自带的解码工具cloak.py，在sqlmap\extra\cloak中打开命令行，来对lib_mysqludf_sys.dll_进行解码在，然后在直接利用，输入下面的</strong></p>
+<p><strong>cloak.py -d -i C:\sqlmap\data\udf\mysql\windows\64\lib_mysqludf_sys.dll_</strong></p>
+<p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/3.png"
-                     
+                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091153900.png"
+                      alt="image-20230821091153900"
                 ></p>
-<h4 id="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"><a href="#安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件" class="headerlink" title="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"></a><strong>安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件</strong></h4><p>​            </p>
-<h3 id="Nmap的基本命令以及扫描类型"><a href="#Nmap的基本命令以及扫描类型" class="headerlink" title="Nmap的基本命令以及扫描类型"></a><strong>Nmap的基本命令</strong>以及扫描类型</h3><p>  <strong>Intense scan                  nmap -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Intense scan plus UDP         nmap -sS -sU -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Intense scan, all TCP ports   nmap -p 1-65535 -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Intense scan, no ping         nmap -T4 -A -v -Pn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Ping scan                     nmap -sn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Quick scan                    nmap -T4 -F <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Quick scan plus               nmap -sV -T4 -O -F --version-light <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Quick traceroute              nmap -sn --traceroute <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Regular scan                  nmap <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Slow comprehensive scan       nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script &quot;default or (discovery and safe)&quot; <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>​                     </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><h4 id="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"><a href="#Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。" class="headerlink" title="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"></a><strong>Nmap是一个很好的网络探测和安全审核的工具</strong>，<strong>Nmap可以用于扫描互联网上大规模的计算机。</strong></h4><h4 id="支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。"><a href="#支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。" class="headerlink" title="支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。"></a><strong>支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。</strong></h4><h4 id="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"><a href="#目前Nmap已经被成千上万的安全专家列为必备的工具之一。" class="headerlink" title="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"></a><strong>目前Nmap已经被成千上万的安全专家列为必备的工具之一。</strong></h4><h4 id="希望这篇文章对大家能够起到帮助！"><a href="#希望这篇文章对大家能够起到帮助！" class="headerlink" title="希望这篇文章对大家能够起到帮助！"></a><strong>希望这篇文章对大家能够起到帮助！</strong></h4>]]></content>
+<p><strong>接着就会在\sqlmap\data\udf\mysql\windows\64目录下生成一个dll的文件lib_mysqludf_sys.dll，这个我们就可以直接拿来利用</strong></p>
+<p><strong>攻击者可以利用lib_mysqludf_sys提供的函数执行系统命令。</strong></p>
+<p><strong>函数：</strong></p>
+<p><strong>sys_eval，执行任意命令，并将输出返回。</strong></p>
+<p><strong>sys_exec，执行任意命令，并将退出码返回。</strong></p>
+<p><strong>sys_get，获取一个环境变量。</strong></p>
+<p><strong>sys_set，创建或修改一个环境变量。</strong></p>
+<p><strong>以我windows系统为例，mysql版本为MySQL5.7.26</strong></p>
+<p><strong>注意：攻击过程中，首先需要将lib_mysqludf_sys ( 目标为windows时，lib_mysqludf_sys.dll；linux时，lib_mysqludf_sys.so）上传到数据库能访问的路径下。</strong></p>
+<p><strong>这里我改了个名字</strong></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091217774.png"
+                      alt="image-20230821091217774"
+                ></p>
+<p><strong>打开mysql执行以下语句：</strong></p>
+<h5 id="create-function-sys-eval-returns-string-soname-udf-dll"><a href="#create-function-sys-eval-returns-string-soname-udf-dll" class="headerlink" title="create function sys_eval returns string soname &#39;udf.dll&#39;"></a><code>create function sys_eval returns string soname &#39;udf.dll&#39;</code></h5><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091236187.png"
+                      alt="image-20230821091236187"
+                ></p>
+<p><strong>执行成功，现在执行语句可查看ip</strong></p>
+<h5 id="select-sys-eval-ipconfig"><a href="#select-sys-eval-ipconfig" class="headerlink" title="select sys_eval(&#39;ipconfig&#39;)"></a><code>select sys_eval(&#39;ipconfig&#39;)</code></h5><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091253240.png"
+                      alt="image-20230821091253240"
+                ></p>
+<h1 id="六、实战情况"><a href="#六、实战情况" class="headerlink" title="六、实战情况"></a><strong>六、实战情况</strong></h1><p><strong>为了将这个转换为十六进制，可以借助mysql中的hex函数，先将udf.dll移动到C盘中，这样路径也清晰一些，然后执行下面命令</strong></p>
+<p><code>select hex(load_file(&#39;C:/udf.dll&#39;)) into dumpfile &#39;c:/udf.txt&#39;</code></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091323641.png"
+                      alt="image-20230821091323641"
+                ></p>
+<p><strong>成功生成了十六进制形式流！</strong></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091338213.png"
+                      alt="image-20230821091338213"
+                ></p>
+<p><strong>后面还有很多好玩的内容，大家可以自行去琢磨研究，感谢大家！</strong></p>
+]]></content>
       <categories>
         <category>网络安全</category>
       </categories>
@@ -291,109 +394,6 @@
       </categories>
       <tags>
         <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>UDF提权</title>
-    <url>/2023/08/21/UDF%E6%8F%90%E6%9D%83/</url>
-    <content><![CDATA[<h1>UFD提权</h1>
-
-<p><strong>一、什么是udf</strong></p>
-<p><strong>udf 全称为：user defined function，意为用户自定义函数；用户可以添加自定义的新函数到Mysql中，以达到功能的扩充，调用方式与一般系统自带的函数相同，例如 contact()，user()，version()等函数。</strong></p>
-<p><strong>udf 文件后缀一般为 dll，由C、C++编写</strong></p>
-<p><strong>二、udf在渗透中的作用</strong></p>
-<p><strong>在一般渗透过程中，拿下一台windows服务器的webshell时，由于webshell权限较低，有些操作无法进行，而此时本地恰好存在mysql数据库，那么udf可能就派上用场了；由于windows安装的mysql进程一般都拥有管理员权限，这就意味着用户自定义的函数也拥有管理员权限，我们也就拥有了执行管理员命令的权限，这时新建管理员用户等操作也就轻而易举了，大多数人称为这一操作为udf提权，其实表达不够准确，应该称为通过mysql获得管理员权限。</strong></p>
-<h1 id="三、利用条件"><a href="#三、利用条件" class="headerlink" title="三、利用条件"></a><strong>三、利用条件</strong></h1><p><strong>利用udf的条件其实还是挺苛刻的</strong></p>
-<p><strong>mysql用户权限问题</strong></p>
-<p><strong>获得一个数据库账号，拥有对MySQL的insert和delete权限。以root为佳。</strong></p>
-<p><strong>拥有将udf.dll写入相应目录的权限。</strong></p>
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="四、数据库版本问题"><a href="#四、数据库版本问题" class="headerlink" title="四、数据库版本问题"></a><strong>四、数据库版本问题</strong></h1><p><strong>udf利用的其中一步，是要将我们的xxx.dll文件上传到mysql检索目录中，mysql各版本的检索目录有所不同：</strong></p>
-<p><strong>版本	路径</strong></p>
-<p><strong>MySQL &lt; 5.0	导出路径随意；</strong></p>
-<p><strong>5.0 &lt;&#x3D; MySQL&lt; 5.1	需要导出至目标服务器的系统目录（如：c:&#x2F;windows&#x2F;system32&#x2F;）</strong></p>
-<p><strong>5.1 &lt; MySQL	必须导出到MySQL安装目录下的lib\plugin文件夹下</strong></p>
-<p><strong>五、本地利用过程</strong></p>
-<p><strong>1、获取Mysql安装路径</strong></p>
-<p><strong>2、select @basedir</strong></p>
-<p><strong>查看可操作路径</strong></p>
-<p><strong>show global variables like “%secure%”</strong></p>
-<p><strong>secure_file_priv值为null，表示mysql不允许导入导出，此时我们只能通过别的方法将udf.dll写入安装路径</strong></p>
-<p><strong>3、查看plugin目录路径</strong></p>
-<p><strong>select @@plugin_dir</strong></p>
-<p><strong>4、将dll上传方式推荐几种</strong></p>
-<p><strong>将dll上传到安装路径的方式：</strong></p>
-<p><strong>通过webshell上传</strong></p>
-<p><strong>以hex方式直接上传</strong></p>
-<p><strong>sqlmap中现有的udf文件，分为32位和64位，一定要选择对版本，获取sqlmap的udf方式</strong></p>
-<p><strong>5、sqlmap中udf获取方式</strong></p>
-<p><strong>自动化注入工具Sqlmap已经集成了此功能。</strong></p>
-<p><strong>在 \sqlmap\data\udf\mysql\windows\64目录下存放着lib_mysqludf_sys.dll_</strong></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091127823.png"
-                      alt="image-20230821091127823"
-                ></p>
-<p><strong>可以利用sqlmap 自带的解码工具cloak.py，在sqlmap\extra\cloak中打开命令行，来对lib_mysqludf_sys.dll_进行解码在，然后在直接利用，输入下面的</strong></p>
-<p><strong>cloak.py -d -i C:\sqlmap\data\udf\mysql\windows\64\lib_mysqludf_sys.dll_</strong></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091153900.png"
-                      alt="image-20230821091153900"
-                ></p>
-<p><strong>接着就会在\sqlmap\data\udf\mysql\windows\64目录下生成一个dll的文件lib_mysqludf_sys.dll，这个我们就可以直接拿来利用</strong></p>
-<p><strong>攻击者可以利用lib_mysqludf_sys提供的函数执行系统命令。</strong></p>
-<p><strong>函数：</strong></p>
-<p><strong>sys_eval，执行任意命令，并将输出返回。</strong></p>
-<p><strong>sys_exec，执行任意命令，并将退出码返回。</strong></p>
-<p><strong>sys_get，获取一个环境变量。</strong></p>
-<p><strong>sys_set，创建或修改一个环境变量。</strong></p>
-<p><strong>以我windows系统为例，mysql版本为MySQL5.7.26</strong></p>
-<p><strong>注意：攻击过程中，首先需要将lib_mysqludf_sys ( 目标为windows时，lib_mysqludf_sys.dll；linux时，lib_mysqludf_sys.so）上传到数据库能访问的路径下。</strong></p>
-<p><strong>这里我改了个名字</strong></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091217774.png"
-                      alt="image-20230821091217774"
-                ></p>
-<p><strong>打开mysql执行以下语句：</strong></p>
-<h5 id="create-function-sys-eval-returns-string-soname-udf-dll"><a href="#create-function-sys-eval-returns-string-soname-udf-dll" class="headerlink" title="create function sys_eval returns string soname &#39;udf.dll&#39;"></a><code>create function sys_eval returns string soname &#39;udf.dll&#39;</code></h5><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091236187.png"
-                      alt="image-20230821091236187"
-                ></p>
-<p><strong>执行成功，现在执行语句可查看ip</strong></p>
-<h5 id="select-sys-eval-ipconfig"><a href="#select-sys-eval-ipconfig" class="headerlink" title="select sys_eval(&#39;ipconfig&#39;)"></a><code>select sys_eval(&#39;ipconfig&#39;)</code></h5><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091253240.png"
-                      alt="image-20230821091253240"
-                ></p>
-<h1 id="六、实战情况"><a href="#六、实战情况" class="headerlink" title="六、实战情况"></a><strong>六、实战情况</strong></h1><p><strong>为了将这个转换为十六进制，可以借助mysql中的hex函数，先将udf.dll移动到C盘中，这样路径也清晰一些，然后执行下面命令</strong></p>
-<p><code>select hex(load_file(&#39;C:/udf.dll&#39;)) into dumpfile &#39;c:/udf.txt&#39;</code></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091323641.png"
-                      alt="image-20230821091323641"
-                ></p>
-<p><strong>成功生成了十六进制形式流！</strong></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/UDF%E6%8F%90%E6%9D%83/image-20230821091338213.png"
-                      alt="image-20230821091338213"
-                ></p>
-<p><strong>后面还有很多好玩的内容，大家可以自行去琢磨研究，感谢大家！</strong></p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>渗透测试</tag>
       </tags>
   </entry>
   <entry>
