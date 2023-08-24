@@ -216,6 +216,11 @@
       </tags>
   </entry>
   <entry>
+    <title>Web安全</title>
+    <url>/2023/08/24/Web%E5%AE%89%E5%85%A8/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>XSS漏洞详解</title>
     <url>/2023/08/11/XSS%E6%BC%8F%E6%B4%9E%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<h3 id="一、XSS漏洞原理"><a href="#一、XSS漏洞原理" class="headerlink" title="一、XSS漏洞原理"></a><strong>一、XSS漏洞原理</strong></h3><p>XSS，即跨站脚本攻击，是指攻击者利用Web服务器中的应用程序或代码漏洞，在页面中嵌入客户端脚本（通常是一段由JavaScript编写的恶意代码，少数情况下还有ActionScript、VBScript等语言），当信任此Web服务器的用户访问Web站点中含有恶意脚本代码的页面或打开收到的URL链接时，用户浏览器会自动加载并执行该恶意代码，从而达到攻击的目的。</p>
@@ -250,32 +255,6 @@
       </categories>
       <tags>
         <tag>渗透测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>吃货日记</title>
-    <url>/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="我们的吃货日记"><a href="#我们的吃货日记" class="headerlink" title="我们的吃货日记"></a>我们的吃货日记</h1><p>​               </p>
-<h4 id="赞不绝口的小龙虾"><a href="#赞不绝口的小龙虾" class="headerlink" title="赞不绝口的小龙虾"></a><div style="color: green">赞不绝口的小龙虾</div></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A71.jpg"
-                     
-                ></p>
-<p>​             </p>
-<p>​                               </p>
-<h4 id="物美价廉的榴莲"><a href="#物美价廉的榴莲" class="headerlink" title="物美价廉的榴莲"></a><strong><div style="color:red">物美价廉的榴莲</div></strong></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A72.jpg"
-                     
-                ></p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>吃货日记</tag>
       </tags>
   </entry>
   <entry>
@@ -331,6 +310,121 @@
       </categories>
       <tags>
         <tag>渗透测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吃货日记</title>
+    <url>/2023/07/26/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="我们的吃货日记"><a href="#我们的吃货日记" class="headerlink" title="我们的吃货日记"></a>我们的吃货日记</h1><p>​               </p>
+<h4 id="赞不绝口的小龙虾"><a href="#赞不绝口的小龙虾" class="headerlink" title="赞不绝口的小龙虾"></a><div style="color: green">赞不绝口的小龙虾</div></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A71.jpg"
+                     
+                ></p>
+<p>​             </p>
+<p>​                               </p>
+<h4 id="物美价廉的榴莲"><a href="#物美价廉的榴莲" class="headerlink" title="物美价廉的榴莲"></a><strong><div style="color:red">物美价廉的榴莲</div></strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%E5%90%83%E8%B4%A7%E6%97%A5%E8%AE%B0/%E5%90%83%E8%B4%A72.jpg"
+                     
+                ></p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>吃货日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>（CVE-2019-8933)漏洞复现</title>
+    <url>/2023/08/24/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<h1>（CVE-2019-8933)漏洞复现
+
+<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2.点击上传跳转页面</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3.在upload&#x2F;后写dede进入到该管理后台</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4.点击模板，进入到默认模板管理</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5.新建模板</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6.在后台输入一句话木马<?php eval($_POST[123]);?>点击保存</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>7.生成-更新主页HTML-浏览选择新建的模板-更改后缀为php</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
+                      alt="img"
+                > </p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>8.使用蚁剑连接(<a class="link"   href="http://202.194.97.206:35497/uploads/index.php" >http://202.194.97.206:35497/uploads/index.php<i class="fas fa-external-link-alt"></i></a>)</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>9.连接成功！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>10.成功在主目录下tmp文件夹中找到flag！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
+                      alt="img"
+                > </p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
       </tags>
   </entry>
 </search>
