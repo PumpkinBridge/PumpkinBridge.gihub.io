@@ -9,7 +9,7 @@
     
     <title>
         
-            SQLServer渗透靶场记录 |
+            CTF文件上传路径靶场 |
         
         HX的博客
     </title>
@@ -185,7 +185,7 @@
         <div class="article-content-container">
 
             <div class="article-title">
-                <span class="title-hover-animation">SQLServer渗透靶场记录</span>
+                <span class="title-hover-animation">CTF文件上传路径靶场</span>
             </div>
 
             
@@ -207,13 +207,13 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2023-08-28 11:23:20</span>
-        <span class="mobile">2023-08-28 11:23</span>
+        <span class="pc">2023-08-28 18:08:47</span>
+        <span class="mobile">2023-08-28 18:08</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2023-08-28 16:48:30</span>
+        <span class="pc">2023-08-29 15:07:53</span>
     </span>
     
     
@@ -234,7 +234,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">渗透测试</a>&nbsp;
+                        <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%BF%9B%E9%98%B6/">文件上传进阶</a>&nbsp;
                     </li>
                 
             </ul>
@@ -244,7 +244,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>77 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>192 字</span>
         </span>
     
     
@@ -267,22 +267,82 @@
             <div class="article-content keep-markdown-body">
                 
 
-                <p>1、给出渗透目标网址：192.168.2.197</p>
-<p>随后开启Nmap扫描该域名开放端口,Nmap命名为:nmap -p -sV 目标,扫描结果如下：</p>
+                <p>1、进入目标网页<a class="link"   target="_blank" rel="noopener" href="http://192.168.2.62/upload-lab/" >http://192.168.2.62/upload-lab/<i class="fas fa-external-link-alt"></i></a></p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/image-20230828112726741.png"
-                      alt="image-20230828112726741"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828181018214.png"
+                      alt="image-20230828181018214"
                 ></p>
-<p>2、可以看到端口27689是开放的，目标网页，随后进入该端口网页</p>
+<p>2、上传木马文件hgd.php</p>
 <p><img  
                      lazyload
                      alt="image"
-                     data-src="/../images/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/image-20230828112829436.png"
-                      alt="image-20230828112829436"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828181114703.png"
+                      alt="image-20230828181114703"
                 ></p>
-<p>3、开启御剑扫描该域名</p>
+<p>3、找不到文件上传路径，打开Burpsuite进行抓包</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828181304612.png"
+                      alt="image-20230828181304612"
+                ></p>
+<p>4、观察题目给出的路径提示，可知该文件类型为MD5编码(用户名)(随机数).php</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828181540135.png"
+                      alt="image-20230828181540135"
+                ></p>
+<p>5、Burpsuite发送到Intruder，添加payload变量</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828181736472.png"
+                      alt="image-20230828181736472"
+                ></p>
+<p>6、用python脚本生成hgd1-hgd99的文件粘贴至Payload设置</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828181854243.png"
+                      alt="image-20230828181854243"
+                ></p>
+<p>7、Payload处理设置为Hash的MD5编码</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828181926227.png"
+                      alt="image-20230828181926227"
+                ></p>
+<p>8、开始攻击，排列结果如下，200状态码说明该路径正确(这里有两个，有一个是因为我之前做的)</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828182010175.png"
+                      alt="image-20230828182010175"
+                ></p>
+<p>9、复制该url，打开蚁剑尝试连接，一句话木马的密码为123，可以看到连接成功了</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828182158390.png"
+                      alt="image-20230828182158390"
+                ></p>
+<p>10、添加数据，寻找flag，flag就在phpstudy_pro目录下，成功！</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828182251882.png"
+                      alt="image-20230828182251882"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/image-20230828182320290.png"
+                      alt="image-20230828182320290"
+                ></p>
 
             </div>
 
@@ -292,16 +352,16 @@
 <div class="article-copyright-info-container">
     <ul class="copyright-info-content">
         <li class="post-title">
-            <span class="type">本文标题</span>：<span class="content">SQLServer渗透靶场记录</span>
+            <span class="type">本文标题</span>：<span class="content">CTF文件上传路径靶场</span>
         </li>
         <li class="post-author">
             <span class="type">本文作者</span>：<span class="content">东东</span>
         </li>
         <li class="post-time">
-            <span class="type">创建时间</span>：<span class="content">2023-08-28 11:23:20</span>
+            <span class="type">创建时间</span>：<span class="content">2023-08-28 18:08:47</span>
         </li>
         <li class="post-link">
-            <span class="type">本文链接</span>：<span class="content">2023/08/28/SQLServer渗透靶场记录/</span>
+            <span class="type">本文链接</span>：<span class="content">2023/08/28/CTF文件上传路径靶场/</span>
         </li>
         <li class="post-license">
             <span class="type">版权声明</span>：<span class="content">本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！</span>
@@ -319,7 +379,7 @@
                 <ul class="post-tags-box">
                     
                         <li class="tag-item">
-                            <a href="/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">#渗透测试</a>&nbsp;
+                            <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%BF%9B%E9%98%B6/">#文件上传进阶</a>&nbsp;
                         </li>
                     
                 </ul>
@@ -331,13 +391,13 @@
                         <div class="article-prev">
                             <a class="prev"
                                rel="prev"
-                               href="/2023/08/28/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%B7%AF%E5%BE%84%E9%9D%B6%E5%9C%BA/"
+                               href="/2023/08/29/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/"
                             >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                                 <span class="title flex-center">
-                                <span class="post-nav-title-item">CTF文件上传路径靶场</span>
+                                <span class="post-nav-title-item">CTF文件上传下载系统靶场</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                             </a>
@@ -347,10 +407,10 @@
                         <div class="article-next">
                             <a class="next"
                                rel="next"
-                               href="/2023/08/24/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"
+                               href="/2023/08/28/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/"
                             >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Tomcat-pass-getshell弱口令漏洞复现</span>
+                                <span class="post-nav-title-item">SQLServer渗透靶场记录</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                                 <span class="right arrow-icon flex-center">

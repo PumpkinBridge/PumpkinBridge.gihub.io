@@ -248,20 +248,22 @@
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/08/28/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/">
-                        CTF文件上传靶场
+                    <a href="/2023/08/29/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/">
+                        CTF文件上传下载系统靶场
                     </a>
                 </h3>
 
                 <div class="home-article-content keep-markdown-body">
                     
-                        1、进入目标网页http://192.168.2.62/upload-lab/
+                        1、进入目标网页http://192.168.2.197:27689/
 
-2、上传木马文件hgd.php
+2、打开御剑对该网页端口进行域名扫描，发现web.config.bak可以下载该配置文件
 
-3、找不到文件上传路径，打开Burpsuite进行抓包
+3、查看该配置文件
 
-4、观察题目给出的路径提示，可知该文件类型为MD5编码(用户名)(随机数)....
+4、打开Beekeeper Studio连接数据库
+
+5、在数...
                     
                 </div>
 
@@ -269,8 +271,8 @@
     <div class="home-article-meta-info">
         <span>
             <i class="fas fa-history"></i>&nbsp;
-            <span class="home-article-date" data-updated="Mon Aug 28 2023 18:24:02 GMT+0800">
-                2023-08-28
+            <span class="home-article-date" data-updated="Tue Aug 29 2023 16:00:56 GMT+0800">
+                2023-08-29
             </span>
         </span>
         
@@ -301,7 +303,70 @@
         
     </div>
 
-    <a class="read-more" href="/2023/08/28/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%9D%B6%E5%9C%BA/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+    <a class="read-more" href="/2023/08/29/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2023/08/28/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%B7%AF%E5%BE%84%E9%9D%B6%E5%9C%BA/">
+                        CTF文件上传路径靶场
+                    </a>
+                </h3>
+
+                <div class="home-article-content keep-markdown-body">
+                    
+                        1、进入目标网页http://192.168.2.62/upload-lab/
+
+2、上传木马文件hgd.php
+
+3、找不到文件上传路径，打开Burpsuite进行抓包
+
+4、观察题目给出的路径提示，可知该文件类型为MD5编码(用户名)(随机数)....
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span>
+            <i class="fas fa-history"></i>&nbsp;
+            <span class="home-article-date" data-updated="Tue Aug 29 2023 15:07:53 GMT+0800">
+                2023-08-29
+            </span>
+        </span>
+        
+            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%BF%9B%E9%98%B6/">文件上传进阶</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a class="read-more" href="/2023/08/28/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%B7%AF%E5%BE%84%E9%9D%B6%E5%9C%BA/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -446,11 +511,11 @@
 
                 <div class="home-article-content keep-markdown-body">
                     
-                        1、打开环境，注册账号账号密码统一设置为admin方便记忆，&#49;&#50;&#51;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;设置为邮箱
+                        1、打开环境，注册账号账号密码统一设置为admin方便记忆，&#49;&#x32;&#51;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#109;设置为邮箱
  
 2、点击logged in
  
-3、点击upload file...
+3、点击upload fi...
                     
                 </div>
 
@@ -798,63 +863,6 @@ udf 全称为：user defined function，意为用户自定义函数；用户可�
     </div>
 
     <a class="read-more" href="/2023/07/28/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-                        Sqli-Labs环境搭建
-                    </a>
-                </h3>
-
-                <div class="home-article-content keep-markdown-body">
-                    
-                        Sqli-Labs环境搭建SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postg...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span>
-            <i class="fas fa-history"></i>&nbsp;
-            <span class="home-article-date" data-updated="Thu Aug 24 2023 17:05:07 GMT+0800">
-                2023-08-24
-            </span>
-        </span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/Web%E5%AE%89%E5%85%A8/">Web安全</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a class="read-more" href="/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
