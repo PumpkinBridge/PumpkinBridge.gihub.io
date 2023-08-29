@@ -75,7 +75,7 @@
                 ></p>
 ]]></content>
       <categories>
-        <category>网络安全</category>
+        <category>渗透测试</category>
       </categories>
       <tags>
         <tag>文件上传进阶</tag>
@@ -162,7 +162,7 @@
                 ></p>
 ]]></content>
       <categories>
-        <category>网络安全</category>
+        <category>渗透测试</category>
       </categories>
       <tags>
         <tag>文件上传进阶</tag>
@@ -646,65 +646,6 @@
       </tags>
   </entry>
   <entry>
-    <title>monstra文件上传(CVE-2020-13384)漏洞复现</title>
-    <url>/2023/08/24/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2020-13384)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<p><em><strong>1、打开环境，注册账号账号密码统一设置为admin方便记忆，<a class="link"   href="mailto:&#49;&#x32;&#51;&#64;&#113;&#x71;&#46;&#99;&#111;&#x6d;" >&#49;&#x32;&#51;&#64;&#113;&#x71;&#46;&#99;&#111;&#x6d;<i class="fas fa-external-link-alt"></i></a>设置为邮箱</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>2、点击logged in</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>3、点击upload file</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>4、点击上传文件抓包</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>5、修改文件名为phar,点击放行，可以看到文件上传成功，点击文件获取路径：</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps12.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>6、直接查看目录tmp</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps13.jpg"
-                      alt="img"
-                > </p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps14.jpg"
-                      alt="img"
-                > </p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>dedecms文件上传(CVE-2019-8933)漏洞复现</title>
     <url>/2023/08/24/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
     <content><![CDATA[<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
@@ -783,6 +724,65 @@
                      data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174729905.png"
                       alt="image-20230824174729905"
                 ></p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>monstra文件上传(CVE-2020-13384)漏洞复现</title>
+    <url>/2023/08/24/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2020-13384)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、打开环境，注册账号账号密码统一设置为admin方便记忆，<a class="link"   href="mailto:&#49;&#x32;&#x33;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;" >&#49;&#x32;&#x33;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;<i class="fas fa-external-link-alt"></i></a>设置为邮箱</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、点击logged in</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3、点击upload file</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4、点击上传文件抓包</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5、修改文件名为phar,点击放行，可以看到文件上传成功，点击文件获取路径：</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps12.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、直接查看目录tmp</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps13.jpg"
+                      alt="img"
+                > </p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps14.jpg"
+                      alt="img"
+                > </p>
 ]]></content>
       <categories>
         <category>网络安全</category>
