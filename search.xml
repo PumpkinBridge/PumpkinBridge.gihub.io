@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CTF文件上传下载系统靶场</title>
+    <url>/2023/08/29/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/</url>
+    <content><![CDATA[<p>1、进入目标网页<a class="link"   href="http://192.168.2.197:27689/" >http://192.168.2.197:27689/<i class="fas fa-external-link-alt"></i></a></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829150931766.png"
+                      alt="image-20230829150931766"
+                ></p>
+<p>2、打开御剑对该网页端口进行域名扫描，发现web.config.bak可以下载该配置文件</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829151817977.png"
+                      alt="image-20230829151817977"
+                ></p>
+<p>3、查看该配置文件</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829151903568.png"
+                      alt="image-20230829151903568"
+                ></p>
+<p>4、打开Beekeeper Studio连接数据库</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152054688.png"
+                      alt="image-20230829152054688"
+                ></p>
+<p>5、在数据库中查找到该后台的登录账户和密码</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152146923.png"
+                      alt="image-20230829152146923"
+                ></p>
+<p>6、登录该系统</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152210765.png"
+                      alt="image-20230829152210765"
+                ></p>
+<p>7、拿到key1</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152406330.png"
+                      alt="image-20230829152406330"
+                ></p>
+<p>8、进入下载目录下的管理文件上传，看到aspx木马文件</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829153446236.png"
+                      alt="image-20230829153446236"
+                ></p>
+<p>9、打开蚁剑对木马进行连接</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829153513417.png"
+                      alt="image-20230829153513417"
+                ></p>
+<p>10、在D盘目录下的Web根目录找到key2，完成！</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829153625337.png"
+                      alt="image-20230829153625337"
+                ></p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>文件上传进阶</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CTF文件上传路径靶场</title>
     <url>/2023/08/28/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%B7%AF%E5%BE%84%E9%9D%B6%E5%9C%BA/</url>
     <content><![CDATA[<p>1、进入目标网页<a class="link"   href="http://192.168.2.62/upload-lab/" >http://192.168.2.62/upload-lab/<i class="fas fa-external-link-alt"></i></a></p>
@@ -88,130 +169,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Nmap搭建及使用</title>
-    <url>/2023/07/28/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Nmap搭建及使用"><a href="#Nmap搭建及使用" class="headerlink" title="Nmap搭建及使用"></a>Nmap搭建及使用</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><h5 id="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。"><a href="#从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。" class="headerlink" title="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。"></a><strong>从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。</strong></h5><h5 id="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"><a href="#为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。" class="headerlink" title="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"></a><strong>为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。</strong></h5><p>​                </p>
-<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a><strong>功能</strong></h3><h4 id="1-主机探测"><a href="#1-主机探测" class="headerlink" title="1.主机探测"></a><strong>1.主机探测</strong></h4><h4 id="2-端口扫描"><a href="#2-端口扫描" class="headerlink" title="2.端口扫描"></a><strong>2.<a class="link"   href="https://so.csdn.net/so/search?q=%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F&spm=1001.2101.3001.7020" >端口扫描<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="3-版本检测"><a href="#3-版本检测" class="headerlink" title="3.版本检测"></a><strong>3.版本检测</strong></h4><h4 id="4-支持探测脚本的编写"><a href="#4-支持探测脚本的编写" class="headerlink" title="4.支持探测脚本的编写"></a><strong>4.支持探测脚本的编写</strong></h4><p>​     </p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h3><h4 id="首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。"><a href="#首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。" class="headerlink" title="首先访问Nmap官网:http://nmap.org，获得windows对应版本的安装包。"></a><strong>首先访问Nmap官网:<a class="link"   href="http://nmap.org,获得windows对应版本的安装包./" >http://nmap.org，获得windows对应版本的安装包。<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法"><a href="#因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法" class="headerlink" title="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~"></a><strong>因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~</strong></h4><h4 id="下载对应安装包后，点击安装，根据提示-一直安装即可。"><a href="#下载对应安装包后，点击安装，根据提示-一直安装即可。" class="headerlink" title="下载对应安装包后，点击安装，根据提示,一直安装即可。"></a><strong>下载对应安装包后，点击安装，根据提示,一直安装即可。</strong></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/1.png"
-                     
-                ></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/2.png"
-                     
-                ></p>
-<h4 id="选择并更改安装路径，点击安装"><a href="#选择并更改安装路径，点击安装" class="headerlink" title="选择并更改安装路径，点击安装"></a><strong>选择并更改安装路径，点击安装</strong></h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/3.png"
-                     
-                ></p>
-<h4 id="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"><a href="#安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件" class="headerlink" title="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"></a><strong>安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件</strong></h4><p>​            </p>
-<h3 id="Nmap的基本命令以及扫描类型"><a href="#Nmap的基本命令以及扫描类型" class="headerlink" title="Nmap的基本命令以及扫描类型"></a><strong>Nmap的基本命令</strong>以及扫描类型</h3><p>  <strong>Intense scan                  nmap -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Intense scan plus UDP         nmap -sS -sU -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Intense scan, all TCP ports   nmap -p 1-65535 -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Intense scan, no ping         nmap -T4 -A -v -Pn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Ping scan                     nmap -sn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Quick scan                    nmap -T4 -F <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Quick scan plus               nmap -sV -T4 -O -F --version-light <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Quick traceroute              nmap -sn --traceroute <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Regular scan                  nmap <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>  <strong>Slow comprehensive scan       nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script &quot;default or (discovery and safe)&quot; <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
-<p>​                     </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><h4 id="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"><a href="#Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。" class="headerlink" title="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"></a><strong>Nmap是一个很好的网络探测和安全审核的工具</strong>，<strong>Nmap可以用于扫描互联网上大规模的计算机。</strong></h4><h4 id="支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。"><a href="#支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。" class="headerlink" title="支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。"></a><strong>支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。</strong></h4><h4 id="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"><a href="#目前Nmap已经被成千上万的安全专家列为必备的工具之一。" class="headerlink" title="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"></a><strong>目前Nmap已经被成千上万的安全专家列为必备的工具之一。</strong></h4><h4 id="希望这篇文章对大家能够起到帮助！"><a href="#希望这篇文章对大家能够起到帮助！" class="headerlink" title="希望这篇文章对大家能够起到帮助！"></a><strong>希望这篇文章对大家能够起到帮助！</strong></h4>]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>渗透测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CTF文件上传下载系统靶场</title>
-    <url>/2023/08/29/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/</url>
-    <content><![CDATA[<p>1、进入目标网页<a class="link"   href="http://192.168.2.197:27689/" >http://192.168.2.197:27689/<i class="fas fa-external-link-alt"></i></a></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829150931766.png"
-                      alt="image-20230829150931766"
-                ></p>
-<p>2、打开御剑对该网页端口进行域名扫描，发现web.config.bak可以下载该配置文件</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829151817977.png"
-                      alt="image-20230829151817977"
-                ></p>
-<p>3、查看该配置文件</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829151903568.png"
-                      alt="image-20230829151903568"
-                ></p>
-<p>4、打开Beekeeper Studio连接数据库</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152054688.png"
-                      alt="image-20230829152054688"
-                ></p>
-<p>5、在数据库中查找到该后台的登录账户和密码</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152146923.png"
-                      alt="image-20230829152146923"
-                ></p>
-<p>6、登录该系统</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152210765.png"
-                      alt="image-20230829152210765"
-                ></p>
-<p>7、拿到key1</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829152406330.png"
-                      alt="image-20230829152406330"
-                ></p>
-<p>8、进入下载目录下的管理文件上传，看到aspx木马文件</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829153446236.png"
-                      alt="image-20230829153446236"
-                ></p>
-<p>9、打开蚁剑对木马进行连接</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829153513417.png"
-                      alt="image-20230829153513417"
-                ></p>
-<p>10、在D盘目录下的Web根目录找到key2，完成！</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/CTF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E7%B3%BB%E7%BB%9F%E9%9D%B6%E5%9C%BA/image-20230829153625337.png"
-                      alt="image-20230829153625337"
-                ></p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>文件上传进阶</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HEXO博客搭建</title>
     <url>/2023/07/26/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="搭建HEXO博客"><a href="#搭建HEXO博客" class="headerlink" title="搭建HEXO博客"></a>搭建HEXO博客</h1><p>​                                                   </p>
@@ -267,6 +224,49 @@
       </tags>
   </entry>
   <entry>
+    <title>Nmap搭建及使用</title>
+    <url>/2023/07/28/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Nmap搭建及使用"><a href="#Nmap搭建及使用" class="headerlink" title="Nmap搭建及使用"></a>Nmap搭建及使用</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><h5 id="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。"><a href="#从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。" class="headerlink" title="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。"></a><strong>从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。</strong></h5><h5 id="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"><a href="#为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。" class="headerlink" title="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"></a><strong>为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。</strong></h5><p>​                </p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a><strong>功能</strong></h3><h4 id="1-主机探测"><a href="#1-主机探测" class="headerlink" title="1.主机探测"></a><strong>1.主机探测</strong></h4><h4 id="2-端口扫描"><a href="#2-端口扫描" class="headerlink" title="2.端口扫描"></a><strong>2.<a class="link"   href="https://so.csdn.net/so/search?q=%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F&spm=1001.2101.3001.7020" >端口扫描<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="3-版本检测"><a href="#3-版本检测" class="headerlink" title="3.版本检测"></a><strong>3.版本检测</strong></h4><h4 id="4-支持探测脚本的编写"><a href="#4-支持探测脚本的编写" class="headerlink" title="4.支持探测脚本的编写"></a><strong>4.支持探测脚本的编写</strong></h4><p>​     </p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h3><h4 id="首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。"><a href="#首先访问Nmap官网-http-nmap-org，获得windows对应版本的安装包。" class="headerlink" title="首先访问Nmap官网:http://nmap.org，获得windows对应版本的安装包。"></a><strong>首先访问Nmap官网:<a class="link"   href="http://nmap.org,获得windows对应版本的安装包./" >http://nmap.org，获得windows对应版本的安装包。<i class="fas fa-external-link-alt"></i></a></strong></h4><h4 id="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法"><a href="#因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法" class="headerlink" title="因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~"></a><strong>因为我个人是直接拿下载好的压缩包进行解压的，所以这也是一种方法~</strong></h4><h4 id="下载对应安装包后，点击安装，根据提示-一直安装即可。"><a href="#下载对应安装包后，点击安装，根据提示-一直安装即可。" class="headerlink" title="下载对应安装包后，点击安装，根据提示,一直安装即可。"></a><strong>下载对应安装包后，点击安装，根据提示,一直安装即可。</strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/1.png"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/2.png"
+                     
+                ></p>
+<h4 id="选择并更改安装路径，点击安装"><a href="#选择并更改安装路径，点击安装" class="headerlink" title="选择并更改安装路径，点击安装"></a><strong>选择并更改安装路径，点击安装</strong></h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/3.png"
+                     
+                ></p>
+<h4 id="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"><a href="#安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件" class="headerlink" title="安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件"></a><strong>安装过程中可能会出现无法安装的现象，若弹窗则选择Unstall进行卸载原有软件</strong></h4><p>​            </p>
+<h3 id="Nmap的基本命令以及扫描类型"><a href="#Nmap的基本命令以及扫描类型" class="headerlink" title="Nmap的基本命令以及扫描类型"></a><strong>Nmap的基本命令</strong>以及扫描类型</h3><p>  <strong>Intense scan                  nmap -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan plus UDP         nmap -sS -sU -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan, all TCP ports   nmap -p 1-65535 -T4 -A -v <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Intense scan, no ping         nmap -T4 -A -v -Pn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Ping scan                     nmap -sn <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick scan                    nmap -T4 -F <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick scan plus               nmap -sV -T4 -O -F --version-light <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Quick traceroute              nmap -sn --traceroute <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Regular scan                  nmap <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>  <strong>Slow comprehensive scan       nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script &quot;default or (discovery and safe)&quot; <a class="link"   href="http://www.baidu.com/" >www.baidu.com<i class="fas fa-external-link-alt"></i></a></strong></p>
+<p>​                     </p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><h4 id="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"><a href="#Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。" class="headerlink" title="Nmap是一个很好的网络探测和安全审核的工具，Nmap可以用于扫描互联网上大规模的计算机。"></a><strong>Nmap是一个很好的网络探测和安全审核的工具</strong>，<strong>Nmap可以用于扫描互联网上大规模的计算机。</strong></h4><h4 id="支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。"><a href="#支持操作系统：Windows-Linux-Unix-MacOS等等；源码开放，方便移植。" class="headerlink" title="支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。"></a><strong>支持操作系统：Windows&#x2F;Linux&#x2F;Unix&#x2F;MacOS等等；源码开放，方便移植。</strong></h4><h4 id="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"><a href="#目前Nmap已经被成千上万的安全专家列为必备的工具之一。" class="headerlink" title="目前Nmap已经被成千上万的安全专家列为必备的工具之一。"></a><strong>目前Nmap已经被成千上万的安全专家列为必备的工具之一。</strong></h4><h4 id="希望这篇文章对大家能够起到帮助！"><a href="#希望这篇文章对大家能够起到帮助！" class="headerlink" title="希望这篇文章对大家能够起到帮助！"></a><strong>希望这篇文章对大家能够起到帮助！</strong></h4>]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>渗透测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SQLServer渗透靶场记录</title>
     <url>/2023/08/28/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>1、给出渗透目标网址：192.168.2.197</p>
@@ -291,66 +291,6 @@
       </categories>
       <tags>
         <tag>渗透测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tomcat-pass-getshell弱口令漏洞复现</title>
-    <url>/2023/08/24/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<p><em><strong>1、开启环境，进入网站</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>2、点击Manager App，弱口令admin登录</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>3、登陆成功</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>4、制作jsp木马，下段jsp木马密码为：passwd，将下述代码保存为jsp格式，并将jsp格式文件打包压缩成为war文件格式进行上传。</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>5、&#x2F;压缩包文件名&#x2F;一句话木马.jsp</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>6、打开蚁剑，进行连接，连接成功！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>7、查看主目录下的tmp文件，找到flag！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
-                      alt="img"
-                > </p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
       </tags>
   </entry>
   <entry>
@@ -415,6 +355,66 @@
                      
                 ></p>
 <h4 id="到这里基本上就完成Sqli-Labs的搭建啦"><a href="#到这里基本上就完成Sqli-Labs的搭建啦" class="headerlink" title="到这里基本上就完成Sqli-Labs的搭建啦~"></a>到这里基本上就完成Sqli-Labs的搭建啦~</h4><h4 id="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"><a href="#这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！" class="headerlink" title="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"></a>这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！</h4><h4 id="谢谢观看"><a href="#谢谢观看" class="headerlink" title="谢谢观看~"></a>谢谢观看~</h4>]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tomcat-pass-getshell弱口令漏洞复现</title>
+    <url>/2023/08/24/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、开启环境，进入网站</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、点击Manager App，弱口令admin登录</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3、登陆成功</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4、制作jsp木马，下段jsp木马密码为：passwd，将下述代码保存为jsp格式，并将jsp格式文件打包压缩成为war文件格式进行上传。</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5、&#x2F;压缩包文件名&#x2F;一句话木马.jsp</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、打开蚁剑，进行连接，连接成功！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>7、查看主目录下的tmp文件，找到flag！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
+                      alt="img"
+                > </p>
+]]></content>
       <categories>
         <category>网络安全</category>
       </categories>
@@ -646,6 +646,65 @@
       </tags>
   </entry>
   <entry>
+    <title>monstra文件上传(CVE-2020-13384)漏洞复现</title>
+    <url>/2023/08/24/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2020-13384)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、打开环境，注册账号账号密码统一设置为admin方便记忆，<a class="link"   href="mailto:&#49;&#x32;&#51;&#64;&#113;&#x71;&#46;&#99;&#111;&#x6d;" >&#49;&#x32;&#51;&#64;&#113;&#x71;&#46;&#99;&#111;&#x6d;<i class="fas fa-external-link-alt"></i></a>设置为邮箱</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、点击logged in</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3、点击upload file</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4、点击上传文件抓包</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5、修改文件名为phar,点击放行，可以看到文件上传成功，点击文件获取路径：</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps12.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、直接查看目录tmp</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps13.jpg"
+                      alt="img"
+                > </p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps14.jpg"
+                      alt="img"
+                > </p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>dedecms文件上传(CVE-2019-8933)漏洞复现</title>
     <url>/2023/08/24/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
     <content><![CDATA[<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
@@ -724,65 +783,6 @@
                      data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174729905.png"
                       alt="image-20230824174729905"
                 ></p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>monstra文件上传(CVE-2020-13384)漏洞复现</title>
-    <url>/2023/08/24/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2020-13384)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<p><em><strong>1、打开环境，注册账号账号密码统一设置为admin方便记忆，<a class="link"   href="mailto:&#49;&#x32;&#51;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#109;" >&#49;&#x32;&#51;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#109;<i class="fas fa-external-link-alt"></i></a>设置为邮箱</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>2、点击logged in</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>3、点击upload file</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>4、点击上传文件抓包</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>5、修改文件名为phar,点击放行，可以看到文件上传成功，点击文件获取路径：</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps12.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>6、直接查看目录tmp</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps13.jpg"
-                      alt="img"
-                > </p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps14.jpg"
-                      alt="img"
-                > </p>
 ]]></content>
       <categories>
         <category>网络安全</category>
