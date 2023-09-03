@@ -169,6 +169,11 @@
       </tags>
   </entry>
   <entry>
+    <title>Network通关教程</title>
+    <url>/2023/09/03/Network%E9%80%9A%E5%85%B3%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>HEXO博客搭建</title>
     <url>/2023/07/26/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="搭建HEXO博客"><a href="#搭建HEXO博客" class="headerlink" title="搭建HEXO博客"></a>搭建HEXO博客</h1><p>​                                                   </p>
@@ -224,11 +229,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Network通关教程</title>
-    <url>/2023/09/03/Network%E9%80%9A%E5%85%B3%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Nmap搭建及使用</title>
     <url>/2023/07/28/Nmap%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Nmap搭建及使用"><a href="#Nmap搭建及使用" class="headerlink" title="Nmap搭建及使用"></a>Nmap搭建及使用</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><h5 id="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。"><a href="#从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避-欺骗，Nmap是大大小小黑客行动的基本工具。" class="headerlink" title="从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。"></a><strong>从诞生之初，Nmap就一直是网络发现和攻击界面测绘的首选工具。从主机发现和端口扫描，到操作系统检测和IDS规避&#x2F;欺骗，Nmap是大大小小黑客行动的基本工具。</strong></h5><h5 id="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"><a href="#为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。" class="headerlink" title="为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。"></a><strong>为了绘制网络拓扑图，Nmap的发送特制的数据包到目标主机，然后对返回数据包进行分析。Nmap是一款枚举和测试网络的强大工具。</strong></h5><p>​                </p>
@@ -269,6 +269,162 @@
       </categories>
       <tags>
         <tag>渗透测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQLServer渗透靶场记录</title>
+    <url>/2023/08/28/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>1、给出渗透目标网址：192.168.2.197</p>
+<p>随后开启Nmap扫描该域名开放端口,Nmap命名为:nmap -p -sV 目标,扫描结果如下：</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/image-20230828112726741.png"
+                      alt="image-20230828112726741"
+                ></p>
+<p>2、可以看到端口27689是开放的，目标网页，随后进入该端口网页</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/image-20230828112829436.png"
+                      alt="image-20230828112829436"
+                ></p>
+<p>3、开启御剑扫描该域名</p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>渗透测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tomcat-pass-getshell弱口令漏洞复现</title>
+    <url>/2023/08/24/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、开启环境，进入网站</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、点击Manager App，弱口令admin登录</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3、登陆成功</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4、制作jsp木马，下段jsp木马密码为：passwd，将下述代码保存为jsp格式，并将jsp格式文件打包压缩成为war文件格式进行上传。</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5、&#x2F;压缩包文件名&#x2F;一句话木马.jsp</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、打开蚁剑，进行连接，连接成功！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>7、查看主目录下的tmp文件，找到flag！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
+                      alt="img"
+                > </p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sqli-Labs环境搭建</title>
+    <url>/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="Sqli-Labs环境搭建"><a href="#Sqli-Labs环境搭建" class="headerlink" title="Sqli-Labs环境搭建"></a>Sqli-Labs环境搭建</h1><h4 id="SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"><a href="#SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。" class="headerlink" title="SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"></a><strong>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</strong></h4><p>​       </p>
+<h2 id="SQLI-LAB下载地址："><a href="#SQLI-LAB下载地址：" class="headerlink" title="SQLI-LAB下载地址："></a>SQLI-LAB下载地址：</h2><p><a class="link"   href="https://github.com/Audi-1/sqli-labs" >https://github.com/Audi-1/sqli-labs<i class="fas fa-external-link-alt"></i></a></p>
+<h4 id="点击下载Download-ZIP"><a href="#点击下载Download-ZIP" class="headerlink" title="点击下载Download ZIP"></a><strong>点击下载Download ZIP</strong></h4><p> <img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png"
+                     
+                >   </p>
+<p>​               </p>
+<h2 id="WEB环境搭建"><a href="#WEB环境搭建" class="headerlink" title="WEB环境搭建"></a><strong>WEB环境搭建</strong></h2><h4 id="在安装靶场之前，我们还需要搭建web运行环境："><a href="#在安装靶场之前，我们还需要搭建web运行环境：" class="headerlink" title="在安装靶场之前，我们还需要搭建web运行环境："></a>在安装靶场之前，我们还需要搭建web运行环境：</h4><h4 id="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"><a href="#这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载" class="headerlink" title="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"></a>这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载</h4><h4 id="下载后安装即可。"><a href="#下载后安装即可。" class="headerlink" title="下载后安装即可。"></a>下载后安装即可。</h4><p>​                      </p>
+<h2 id="Sql-labs靶场环境搭建"><a href="#Sql-labs靶场环境搭建" class="headerlink" title="Sql-labs靶场环境搭建"></a><strong>Sql-labs靶场环境搭建</strong></h2><h4 id="安装好phpstudy后打开根目录"><a href="#安装好phpstudy后打开根目录" class="headerlink" title="安装好phpstudy后打开根目录"></a>安装好phpstudy后打开根目录</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA2.png"
+                     
+                ></p>
+<p>​                    </p>
+<h4 id="把刚才下载的压缩包放到根目录下"><a href="#把刚才下载的压缩包放到根目录下" class="headerlink" title="把刚才下载的压缩包放到根目录下"></a>把刚才下载的压缩包放到根目录下</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1.png"
+                     
+                ></p>
+<p>​                         </p>
+<h4 id="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc"><a href="#打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc" class="headerlink" title="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc"></a>打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2.png"
+                     
+                ></p>
+<p>​              </p>
+<h4 id="打开后将-dbpass-‘’改为-dbpass-‘root’并保存"><a href="#打开后将-dbpass-‘’改为-dbpass-‘root’并保存" class="headerlink" title="打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存"></a>打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3.png"
+                     
+                ></p>
+<p>​                     </p>
+<h4 id="完成后打开phpstudy，启动Apache和Mysql"><a href="#完成后打开phpstudy，启动Apache和Mysql" class="headerlink" title="完成后打开phpstudy，启动Apache和Mysql"></a>完成后打开phpstudy，启动Apache和Mysql</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/4.png"
+                     
+                ></p>
+<p>​               </p>
+<h4 id="接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页"><a href="#接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页" class="headerlink" title="接着浏览器打开“http://127.0.0.1/sqli-labs-master/”访问首页"></a>接着浏览器打开“<a class="link"   href="http://127.0.0.1/sqli-labs-master/%E2%80%9D%E8%AE%BF%E9%97%AE%E9%A6%96%E9%A1%B5" >http://127.0.0.1/sqli-labs-master/”访问首页<i class="fas fa-external-link-alt"></i></a></h4><h4 id="打开以后图示如下"><a href="#打开以后图示如下" class="headerlink" title="打开以后图示如下"></a>打开以后图示如下</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/5.png"
+                     
+                ></p>
+<p>​           </p>
+<h4 id="先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面"><a href="#先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面" class="headerlink" title="先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面"></a>先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面</h4><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/6.png"
+                     
+                ></p>
+<h4 id="到这里基本上就完成Sqli-Labs的搭建啦"><a href="#到这里基本上就完成Sqli-Labs的搭建啦" class="headerlink" title="到这里基本上就完成Sqli-Labs的搭建啦~"></a>到这里基本上就完成Sqli-Labs的搭建啦~</h4><h4 id="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"><a href="#这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！" class="headerlink" title="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"></a>这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！</h4><h4 id="谢谢观看"><a href="#谢谢观看" class="headerlink" title="谢谢观看~"></a>谢谢观看~</h4>]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
       </tags>
   </entry>
   <entry>
@@ -480,7 +636,7 @@
                       alt="image-20230903101444851"
                 ></p>
 <p>8.通过依次尝试，john:1337hack可以登录目标靶机</p>
-<p>ssh <a class="link"   href="mailto:&#106;&#x6f;&#x68;&#110;&#x40;&#49;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#53;&#54;&#x2e;&#49;&#48;&#x31;" >&#106;&#x6f;&#x68;&#110;&#x40;&#49;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#53;&#54;&#x2e;&#49;&#48;&#x31;<i class="fas fa-external-link-alt"></i></a></p>
+<p>ssh <a class="link"   href="mailto:&#x6a;&#111;&#104;&#110;&#x40;&#49;&#57;&#x32;&#46;&#49;&#x36;&#56;&#46;&#x35;&#54;&#x2e;&#x31;&#x30;&#x31;" >&#x6a;&#111;&#104;&#110;&#x40;&#49;&#57;&#x32;&#46;&#49;&#x36;&#56;&#46;&#x35;&#54;&#x2e;&#x31;&#x30;&#x31;<i class="fas fa-external-link-alt"></i></a></p>
 <p><img  
                      lazyload
                      alt="image"
@@ -545,162 +701,6 @@
       </categories>
       <tags>
         <tag>渗透测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sqli-Labs环境搭建</title>
-    <url>/2023/07/26/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="Sqli-Labs环境搭建"><a href="#Sqli-Labs环境搭建" class="headerlink" title="Sqli-Labs环境搭建"></a>Sqli-Labs环境搭建</h1><h4 id="SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"><a href="#SQLI，sql-injection，我们称之为sql注入。何为sql，英文：Structured-Query-Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS-SQL-Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。" class="headerlink" title="SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。"></a><strong>SQLI，sql injection，我们称之为sql注入。何为sql，英文：Structured Query Language，叫做结构化查询语言。常见的结构化数据库有MySQL，MS SQL ,Oracle以及Postgresql。Sql语言就是我们在管理数据库时用到的一种。在我们的应用系统使用sql语句进行管理应用数据库时，往往采用拼接的方式形成一条完整的数据库语言，而危险的是，在拼接sql语句的时候，我们可以改变sql语句。从而让数据执行我们想要执行的语句，这就是我们常说的sql注入。而Sqli-labs是一个印度程序员写的，用来学习sql注入的一个游戏教程。</strong></h4><p>​       </p>
-<h2 id="SQLI-LAB下载地址："><a href="#SQLI-LAB下载地址：" class="headerlink" title="SQLI-LAB下载地址："></a>SQLI-LAB下载地址：</h2><p><a class="link"   href="https://github.com/Audi-1/sqli-labs" >https://github.com/Audi-1/sqli-labs<i class="fas fa-external-link-alt"></i></a></p>
-<h4 id="点击下载Download-ZIP"><a href="#点击下载Download-ZIP" class="headerlink" title="点击下载Download ZIP"></a><strong>点击下载Download ZIP</strong></h4><p> <img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png"
-                     
-                >   </p>
-<p>​               </p>
-<h2 id="WEB环境搭建"><a href="#WEB环境搭建" class="headerlink" title="WEB环境搭建"></a><strong>WEB环境搭建</strong></h2><h4 id="在安装靶场之前，我们还需要搭建web运行环境："><a href="#在安装靶场之前，我们还需要搭建web运行环境：" class="headerlink" title="在安装靶场之前，我们还需要搭建web运行环境："></a>在安装靶场之前，我们还需要搭建web运行环境：</h4><h4 id="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"><a href="#这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载" class="headerlink" title="这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载"></a>这里直接使用phpstudy进行搭建，phpStudy是一个PHP调试环境的程序集成包。安装后一键启动即可运行web环境：Windows版phpstudy下载</h4><h4 id="下载后安装即可。"><a href="#下载后安装即可。" class="headerlink" title="下载后安装即可。"></a>下载后安装即可。</h4><p>​                      </p>
-<h2 id="Sql-labs靶场环境搭建"><a href="#Sql-labs靶场环境搭建" class="headerlink" title="Sql-labs靶场环境搭建"></a><strong>Sql-labs靶场环境搭建</strong></h2><h4 id="安装好phpstudy后打开根目录"><a href="#安装好phpstudy后打开根目录" class="headerlink" title="安装好phpstudy后打开根目录"></a>安装好phpstudy后打开根目录</h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA2.png"
-                     
-                ></p>
-<p>​                    </p>
-<h4 id="把刚才下载的压缩包放到根目录下"><a href="#把刚才下载的压缩包放到根目录下" class="headerlink" title="把刚才下载的压缩包放到根目录下"></a>把刚才下载的压缩包放到根目录下</h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1.png"
-                     
-                ></p>
-<p>​                         </p>
-<h4 id="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc"><a href="#打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds-inc" class="headerlink" title="打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc"></a>打开sqli-labs-master在里面中找到sqli-connections并以记事本的方式打开db-creds.inc</h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2.png"
-                     
-                ></p>
-<p>​              </p>
-<h4 id="打开后将-dbpass-‘’改为-dbpass-‘root’并保存"><a href="#打开后将-dbpass-‘’改为-dbpass-‘root’并保存" class="headerlink" title="打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存"></a>打开后将$dbpass&#x3D;‘’改为$dbpass&#x3D;‘root’并保存</h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3.png"
-                     
-                ></p>
-<p>​                     </p>
-<h4 id="完成后打开phpstudy，启动Apache和Mysql"><a href="#完成后打开phpstudy，启动Apache和Mysql" class="headerlink" title="完成后打开phpstudy，启动Apache和Mysql"></a>完成后打开phpstudy，启动Apache和Mysql</h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/4.png"
-                     
-                ></p>
-<p>​               </p>
-<h4 id="接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页"><a href="#接着浏览器打开“http-127-0-0-1-sqli-labs-master-”访问首页" class="headerlink" title="接着浏览器打开“http://127.0.0.1/sqli-labs-master/”访问首页"></a>接着浏览器打开“<a class="link"   href="http://127.0.0.1/sqli-labs-master/%E2%80%9D%E8%AE%BF%E9%97%AE%E9%A6%96%E9%A1%B5" >http://127.0.0.1/sqli-labs-master/”访问首页<i class="fas fa-external-link-alt"></i></a></h4><h4 id="打开以后图示如下"><a href="#打开以后图示如下" class="headerlink" title="打开以后图示如下"></a>打开以后图示如下</h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/5.png"
-                     
-                ></p>
-<p>​           </p>
-<h4 id="先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面"><a href="#先点击Setup-reset-Database-for-labs使其自动创建数据库，创建表并填充数据后是这样的页面" class="headerlink" title="先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面"></a>先点击Setup&#x2F;reset Database for labs使其自动创建数据库，创建表并填充数据后是这样的页面</h4><p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Sqli-Labs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/6.png"
-                     
-                ></p>
-<h4 id="到这里基本上就完成Sqli-Labs的搭建啦"><a href="#到这里基本上就完成Sqli-Labs的搭建啦" class="headerlink" title="到这里基本上就完成Sqli-Labs的搭建啦~"></a>到这里基本上就完成Sqli-Labs的搭建啦~</h4><h4 id="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"><a href="#这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！" class="headerlink" title="这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！"></a>这个靶场还是很不错的，对于需要练习Sql注入的小伙伴们，可以多多练习，祝各位大佬早日通关！！</h4><h4 id="谢谢观看"><a href="#谢谢观看" class="headerlink" title="谢谢观看~"></a>谢谢观看~</h4>]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SQLServer渗透靶场记录</title>
-    <url>/2023/08/28/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p>1、给出渗透目标网址：192.168.2.197</p>
-<p>随后开启Nmap扫描该域名开放端口,Nmap命名为:nmap -p -sV 目标,扫描结果如下：</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/image-20230828112726741.png"
-                      alt="image-20230828112726741"
-                ></p>
-<p>2、可以看到端口27689是开放的，目标网页，随后进入该端口网页</p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/SQLServer%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA%E8%AE%B0%E5%BD%95/image-20230828112829436.png"
-                      alt="image-20230828112829436"
-                ></p>
-<p>3、开启御剑扫描该域名</p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>渗透测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tomcat-pass-getshell弱口令漏洞复现</title>
-    <url>/2023/08/24/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<p><em><strong>1、开启环境，进入网站</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps1.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>2、点击Manager App，弱口令admin登录</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps2.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>3、登陆成功</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps3.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>4、制作jsp木马，下段jsp木马密码为：passwd，将下述代码保存为jsp格式，并将jsp格式文件打包压缩成为war文件格式进行上传。</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps4.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>5、&#x2F;压缩包文件名&#x2F;一句话木马.jsp</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps5.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>6、打开蚁剑，进行连接，连接成功！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps6.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>7、查看主目录下的tmp文件，找到flag！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/Tomcat-pass-getshell%E5%BC%B1%E5%8F%A3%E4%BB%A4%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
-                      alt="img"
-                > </p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
       </tags>
   </entry>
   <entry>
@@ -776,189 +776,6 @@
                      lazyload
                      alt="image"
                      data-src="/../images/Tomcat%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2017-12615-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps7.jpg"
-                      alt="img"
-                > </p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dedecms文件上传(CVE-2019-8933)漏洞复现</title>
-    <url>/2023/08/24/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174353400.png"
-                      alt="image-20230824174353400"
-                ></p>
-<p><em><strong>2.点击上传跳转页面</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174418389.png"
-                      alt="image-20230824174418389"
-                ></p>
-<p><em><strong>3.在upload&#x2F;后写dede进入到该管理后台</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174441418.png"
-                      alt="image-20230824174441418"
-                ></p>
-<p><em><strong>4.点击模板，进入到默认模板管理</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174503674.png"
-                      alt="image-20230824174503674"
-                ></p>
-<p><em><strong>5.新建模板</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174518062.png"
-                      alt="image-20230824174518062"
-                ></p>
-<p><em><strong>6.在后台输入一句话木马<?php eval($_POST[123]);?>点击保存</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174605190.png"
-                      alt="image-20230824174605190"
-                ></p>
-<p><em><strong>7.生成-更新主页HTML-浏览选择新建的模板-更改后缀为php</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174619578.png"
-                      alt="image-20230824174619578"
-                ></p>
-<p> <img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174632722.png"
-                      alt="image-20230824174632722"
-                ></p>
-<p><em><strong>8.使用蚁剑连接<a class="link"   href="http://192.168.2.211:14882/uploads/index.php" >http://192.168.2.211:14882/uploads/index.php<i class="fas fa-external-link-alt"></i></a></strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174659762.png"
-                      alt="image-20230824174659762"
-                ></p>
-<p><em><strong>9.连接成功！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174712986.png"
-                      alt="image-20230824174712986"
-                ></p>
-<p><em><strong>10.成功在主目录下tmp文件夹中找到flag！</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174729905.png"
-                      alt="image-20230824174729905"
-                ></p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>XSS漏洞详解</title>
-    <url>/2023/08/11/XSS%E6%BC%8F%E6%B4%9E%E8%AF%A6%E8%A7%A3/</url>
-    <content><![CDATA[<h3 id="一、XSS漏洞原理"><a href="#一、XSS漏洞原理" class="headerlink" title="一、XSS漏洞原理"></a><strong>一、XSS漏洞原理</strong></h3><p>XSS，即跨站脚本攻击，是指攻击者利用Web服务器中的应用程序或代码漏洞，在页面中嵌入客户端脚本（通常是一段由JavaScript编写的恶意代码，少数情况下还有ActionScript、VBScript等语言），当信任此Web服务器的用户访问Web站点中含有恶意脚本代码的页面或打开收到的URL链接时，用户浏览器会自动加载并执行该恶意代码，从而达到攻击的目的。</p>
-<p>当应用程序没有对用户提交的内容进行验证和重新编码，而是直接呈现给网站的访问者时，就可能会触发XSS攻击。</p>
-<h3 id="二、XSS漏洞的危害"><a href="#二、XSS漏洞的危害" class="headerlink" title="二、XSS漏洞的危害"></a><strong>二、XSS漏洞的危害</strong></h3><p>（1）窃取管理员帐号或Cookie。入侵者可以冒充管理员的身份登录后台，使得入侵者具有恶意操纵后台数据的能力，包括读取、更改、添加、删除一些信息。<br>（2）窃取用户的个人信息或者登录帐号，对网站的用户安全产生巨大的威胁。例如冒充用户身份进行各种操作。<br>（3）网站挂马。先将恶意攻击代码嵌入到Web应用程序之中。当用户浏览该挂马页面时，用户的计算机会被植入木马。<br>（4）发送广告或者垃圾信息。攻击者可以利用XSS漏洞植入广告，或者发送垃圾信息，严重影响到用户的正常使用。</p>
-<h3 id="三、XSS漏洞的分类"><a href="#三、XSS漏洞的分类" class="headerlink" title="三、XSS漏洞的分类"></a>三、XSS漏洞的分类</h3><h5 id="1、反射型XSS"><a href="#1、反射型XSS" class="headerlink" title="1、反射型XSS"></a>1、反射型XSS</h5><p>反射型XSS，也称为非持久性XSS，是最常见的一种XSS。</p>
-<p>XSS代码常常出现在URL请求中，当用户访问带有XSS代码的URL请求时，服务器端接收请求并处理，然后将带有XSS代码的数据返回给浏览器，浏览器解析该段带有XSS代码的数据并执行，整个过程就像一次反射，故称为反射型XSS。</p>
-<p>该类攻击的主要特点是它的及时性和一次性，即用户提交请求后，响应信息会立即反馈给用户。该类攻击常发生在搜索引擎、错误提示页面等对用户的输入做出直接反应的场景中。</p>
-<h5 id="2、存储型XSS"><a href="#2、存储型XSS" class="headerlink" title="2、存储型XSS"></a>2、存储型XSS</h5><p>存储型XSS，也称为持久性XSS。</p>
-<p>在存储型XSS中，XSS代码被存储到服务器端，因此允许用户存储数据到服务器端的Web应用程序可能存在该类型XSS漏洞。攻击者提交一段XSS代码后，服务器接收并存储，当其他用户访问包含该XSS代码的页面时，XSS代码被浏览器解析并执行。</p>
-<p>存储型XSS攻击的特点之一是提交的恶意内容会被永久存储，因而一个单独的恶意代码就会使多个用户受害，故被称为持久性XSS，它也是跨站脚本攻击中危害最的一类。二是被存储的用户提交的恶意内容不一定被页面使用，因此存在危险的响应信息不一定被立即返回，也许在访问那些在时间上和空间上没有直接关联的页面时才会引发攻击，因此存在不确定性和更好的隐蔽性。</p>
-<p>这类攻击的一个典型场景是留言板、博客和论坛等，当恶意用户在某论坛页面发布含有恶意的Javascript代码的留言时，论坛会将该用户的留言内容保存在数据库或文件中并作为页面内容的一部分显示出来。当其他用户查看该恶意用户的留言时，恶意用户提交的恶意代码就会在用户浏览器中解析并执行。</p>
-<h5 id="3、DOM型XSS"><a href="#3、DOM型XSS" class="headerlink" title="3、DOM型XSS"></a>3、DOM型XSS</h5><p>DOM (Document Objet Model)指文档对象模型。</p>
-<p>DOM常用来表示在HTML和XML中的对象。DOM可以允许程序动态的访问和更新文档的内容、结构等。客户端JavaScript可以访问浏览器的文档对象模型。也就是说，通过JavaScript代码控制DOM节点就可以不经过服务器端的参与重构HTML页面。</p>
-<p>该类攻击是反射型XSS的变种。它通常是由于客户端接收到的脚本代码存在逻辑错误或者使用不当导致的。比如Javascript代码不正确地使用各种DOM方法(如document.write)和Javascript内部函数(如eval函数)，动态拼接HTML代码和脚本代码就容易引发DOM型的跨站脚本攻击。</p>
-<p>因此，DOM型XSS与前面两种XSS的区别就在于DOM型XSS攻击的代码不需要与服务器端进行交互，DOM型XSS的触发基于浏览器端对DOM数据的解析来完成，也就是完全是客户端的事情。</p>
-<p>4、判断是哪一种XSS<br>发送一次带XSS代码的请求，若只能在当前返回的数据包里发现XSS代码，则是反射型；若以后这个页面的返回包里都会有XSS代码，则是存储型；若在返回包里找不到XSS代码，则是DOM型。</p>
-<h3 id="四、XSS漏洞的检测与防御"><a href="#四、XSS漏洞的检测与防御" class="headerlink" title="四、XSS漏洞的检测与防御"></a>四、XSS漏洞的检测与防御</h3><h5 id="1、检测"><a href="#1、检测" class="headerlink" title="1、检测"></a>1、检测</h5><p>手工检测<br>手工检测重点要考虑数据输入的地方，且需要清楚输入的数据输出到什么地方。</p>
-<p>在检测的开始，可以输入一些敏感字符，比如“&lt;、&gt;、（）”等，提交后查看网页源代码的变化以发现输入被输出到什么地方，且可以发现相关敏感字符是否被过滤。</p>
-<p>手工检测结果相对准确，但效率较低。</p>
-<p>工具检测<br>常用工具有AVWS（Acunetix Web Vulnerability Scanner）、BurpSuite等。还有一些专门针对XSS漏洞的检测工具，如：XSSer、XSSF（跨站脚本攻击框架）、BeEF(The Browser Exploitation Framework)等。</p>
-<h5 id="2、防御"><a href="#2、防御" class="headerlink" title="2、防御"></a>2、防御</h5><p>●使用黑名单进行</p>
-<p>●对HTML标签或特殊字符进行过滤</p>
-<p>●使用内容安全的CSP</p>
-<p>●使用设计上就会自动编码的框架，如：OWASP ESAPI、React JS、JSOUP等，对于JAVA而言，可以使用ESAPI.encoder().encodeForHTML()对字符串进行HTML编码。</p>
-<p>●对于反射型和存储型XSS，可以在数据返回给客户端浏览器时，将敏感字符进行转义，如：将单引号进行编码替换（十进制编码’、十六进制编码’、HTML编码&amp;apos、Unicode编码\u0027等）。</p>
-<p>●对于DOM型XSS，可以使用上下文敏感数据编码。如：在PHP中的htmlspecialchars（）、htmlentities（）函 数可以将一些预定义的字符转换为HTML实体，如：小于转化为&lt;、大于转化为&gt;、双引号转化为”、单引号转化为&amp;apos、与转化 为&amp;等。</p>
-<p>●启用浏览器的HttpOnly特性可以组织客户端脚本访问cookie。如：在PHP中可以通过下面的代码设置cookie并启用HttpOnly。</p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>Web安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>monstra文件上传(CVE-2020-13384)漏洞复现</title>
-    <url>/2023/08/24/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2020-13384)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
-    <content><![CDATA[<p><em><strong>1、打开环境，注册账号账号密码统一设置为admin方便记忆，<a class="link"   href="mailto:&#x31;&#50;&#51;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;" >&#x31;&#50;&#51;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;<i class="fas fa-external-link-alt"></i></a>设置为邮箱</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>2、点击logged in</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>3、点击upload file</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>4、点击上传文件抓包</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>5、修改文件名为phar,点击放行，可以看到文件上传成功，点击文件获取路径：</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps12.jpg"
-                      alt="img"
-                > </p>
-<p><em><strong>6、直接查看目录tmp</strong></em></p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps13.jpg"
-                      alt="img"
-                > </p>
-<p><img  
-                     lazyload
-                     alt="image"
-                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps14.jpg"
                       alt="img"
                 > </p>
 ]]></content>
@@ -1070,6 +887,189 @@
       </categories>
       <tags>
         <tag>渗透测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>XSS漏洞详解</title>
+    <url>/2023/08/11/XSS%E6%BC%8F%E6%B4%9E%E8%AF%A6%E8%A7%A3/</url>
+    <content><![CDATA[<h3 id="一、XSS漏洞原理"><a href="#一、XSS漏洞原理" class="headerlink" title="一、XSS漏洞原理"></a><strong>一、XSS漏洞原理</strong></h3><p>XSS，即跨站脚本攻击，是指攻击者利用Web服务器中的应用程序或代码漏洞，在页面中嵌入客户端脚本（通常是一段由JavaScript编写的恶意代码，少数情况下还有ActionScript、VBScript等语言），当信任此Web服务器的用户访问Web站点中含有恶意脚本代码的页面或打开收到的URL链接时，用户浏览器会自动加载并执行该恶意代码，从而达到攻击的目的。</p>
+<p>当应用程序没有对用户提交的内容进行验证和重新编码，而是直接呈现给网站的访问者时，就可能会触发XSS攻击。</p>
+<h3 id="二、XSS漏洞的危害"><a href="#二、XSS漏洞的危害" class="headerlink" title="二、XSS漏洞的危害"></a><strong>二、XSS漏洞的危害</strong></h3><p>（1）窃取管理员帐号或Cookie。入侵者可以冒充管理员的身份登录后台，使得入侵者具有恶意操纵后台数据的能力，包括读取、更改、添加、删除一些信息。<br>（2）窃取用户的个人信息或者登录帐号，对网站的用户安全产生巨大的威胁。例如冒充用户身份进行各种操作。<br>（3）网站挂马。先将恶意攻击代码嵌入到Web应用程序之中。当用户浏览该挂马页面时，用户的计算机会被植入木马。<br>（4）发送广告或者垃圾信息。攻击者可以利用XSS漏洞植入广告，或者发送垃圾信息，严重影响到用户的正常使用。</p>
+<h3 id="三、XSS漏洞的分类"><a href="#三、XSS漏洞的分类" class="headerlink" title="三、XSS漏洞的分类"></a>三、XSS漏洞的分类</h3><h5 id="1、反射型XSS"><a href="#1、反射型XSS" class="headerlink" title="1、反射型XSS"></a>1、反射型XSS</h5><p>反射型XSS，也称为非持久性XSS，是最常见的一种XSS。</p>
+<p>XSS代码常常出现在URL请求中，当用户访问带有XSS代码的URL请求时，服务器端接收请求并处理，然后将带有XSS代码的数据返回给浏览器，浏览器解析该段带有XSS代码的数据并执行，整个过程就像一次反射，故称为反射型XSS。</p>
+<p>该类攻击的主要特点是它的及时性和一次性，即用户提交请求后，响应信息会立即反馈给用户。该类攻击常发生在搜索引擎、错误提示页面等对用户的输入做出直接反应的场景中。</p>
+<h5 id="2、存储型XSS"><a href="#2、存储型XSS" class="headerlink" title="2、存储型XSS"></a>2、存储型XSS</h5><p>存储型XSS，也称为持久性XSS。</p>
+<p>在存储型XSS中，XSS代码被存储到服务器端，因此允许用户存储数据到服务器端的Web应用程序可能存在该类型XSS漏洞。攻击者提交一段XSS代码后，服务器接收并存储，当其他用户访问包含该XSS代码的页面时，XSS代码被浏览器解析并执行。</p>
+<p>存储型XSS攻击的特点之一是提交的恶意内容会被永久存储，因而一个单独的恶意代码就会使多个用户受害，故被称为持久性XSS，它也是跨站脚本攻击中危害最的一类。二是被存储的用户提交的恶意内容不一定被页面使用，因此存在危险的响应信息不一定被立即返回，也许在访问那些在时间上和空间上没有直接关联的页面时才会引发攻击，因此存在不确定性和更好的隐蔽性。</p>
+<p>这类攻击的一个典型场景是留言板、博客和论坛等，当恶意用户在某论坛页面发布含有恶意的Javascript代码的留言时，论坛会将该用户的留言内容保存在数据库或文件中并作为页面内容的一部分显示出来。当其他用户查看该恶意用户的留言时，恶意用户提交的恶意代码就会在用户浏览器中解析并执行。</p>
+<h5 id="3、DOM型XSS"><a href="#3、DOM型XSS" class="headerlink" title="3、DOM型XSS"></a>3、DOM型XSS</h5><p>DOM (Document Objet Model)指文档对象模型。</p>
+<p>DOM常用来表示在HTML和XML中的对象。DOM可以允许程序动态的访问和更新文档的内容、结构等。客户端JavaScript可以访问浏览器的文档对象模型。也就是说，通过JavaScript代码控制DOM节点就可以不经过服务器端的参与重构HTML页面。</p>
+<p>该类攻击是反射型XSS的变种。它通常是由于客户端接收到的脚本代码存在逻辑错误或者使用不当导致的。比如Javascript代码不正确地使用各种DOM方法(如document.write)和Javascript内部函数(如eval函数)，动态拼接HTML代码和脚本代码就容易引发DOM型的跨站脚本攻击。</p>
+<p>因此，DOM型XSS与前面两种XSS的区别就在于DOM型XSS攻击的代码不需要与服务器端进行交互，DOM型XSS的触发基于浏览器端对DOM数据的解析来完成，也就是完全是客户端的事情。</p>
+<p>4、判断是哪一种XSS<br>发送一次带XSS代码的请求，若只能在当前返回的数据包里发现XSS代码，则是反射型；若以后这个页面的返回包里都会有XSS代码，则是存储型；若在返回包里找不到XSS代码，则是DOM型。</p>
+<h3 id="四、XSS漏洞的检测与防御"><a href="#四、XSS漏洞的检测与防御" class="headerlink" title="四、XSS漏洞的检测与防御"></a>四、XSS漏洞的检测与防御</h3><h5 id="1、检测"><a href="#1、检测" class="headerlink" title="1、检测"></a>1、检测</h5><p>手工检测<br>手工检测重点要考虑数据输入的地方，且需要清楚输入的数据输出到什么地方。</p>
+<p>在检测的开始，可以输入一些敏感字符，比如“&lt;、&gt;、（）”等，提交后查看网页源代码的变化以发现输入被输出到什么地方，且可以发现相关敏感字符是否被过滤。</p>
+<p>手工检测结果相对准确，但效率较低。</p>
+<p>工具检测<br>常用工具有AVWS（Acunetix Web Vulnerability Scanner）、BurpSuite等。还有一些专门针对XSS漏洞的检测工具，如：XSSer、XSSF（跨站脚本攻击框架）、BeEF(The Browser Exploitation Framework)等。</p>
+<h5 id="2、防御"><a href="#2、防御" class="headerlink" title="2、防御"></a>2、防御</h5><p>●使用黑名单进行</p>
+<p>●对HTML标签或特殊字符进行过滤</p>
+<p>●使用内容安全的CSP</p>
+<p>●使用设计上就会自动编码的框架，如：OWASP ESAPI、React JS、JSOUP等，对于JAVA而言，可以使用ESAPI.encoder().encodeForHTML()对字符串进行HTML编码。</p>
+<p>●对于反射型和存储型XSS，可以在数据返回给客户端浏览器时，将敏感字符进行转义，如：将单引号进行编码替换（十进制编码’、十六进制编码’、HTML编码&amp;apos、Unicode编码\u0027等）。</p>
+<p>●对于DOM型XSS，可以使用上下文敏感数据编码。如：在PHP中的htmlspecialchars（）、htmlentities（）函 数可以将一些预定义的字符转换为HTML实体，如：小于转化为&lt;、大于转化为&gt;、双引号转化为”、单引号转化为&amp;apos、与转化 为&amp;等。</p>
+<p>●启用浏览器的HttpOnly特性可以组织客户端脚本访问cookie。如：在PHP中可以通过下面的代码设置cookie并启用HttpOnly。</p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dedecms文件上传(CVE-2019-8933)漏洞复现</title>
+    <url>/2023/08/24/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1.第一步，打开环境，这里我用的是80：14882端口</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174353400.png"
+                      alt="image-20230824174353400"
+                ></p>
+<p><em><strong>2.点击上传跳转页面</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174418389.png"
+                      alt="image-20230824174418389"
+                ></p>
+<p><em><strong>3.在upload&#x2F;后写dede进入到该管理后台</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174441418.png"
+                      alt="image-20230824174441418"
+                ></p>
+<p><em><strong>4.点击模板，进入到默认模板管理</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174503674.png"
+                      alt="image-20230824174503674"
+                ></p>
+<p><em><strong>5.新建模板</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174518062.png"
+                      alt="image-20230824174518062"
+                ></p>
+<p><em><strong>6.在后台输入一句话木马<?php eval($_POST[123]);?>点击保存</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174605190.png"
+                      alt="image-20230824174605190"
+                ></p>
+<p><em><strong>7.生成-更新主页HTML-浏览选择新建的模板-更改后缀为php</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174619578.png"
+                      alt="image-20230824174619578"
+                ></p>
+<p> <img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174632722.png"
+                      alt="image-20230824174632722"
+                ></p>
+<p><em><strong>8.使用蚁剑连接<a class="link"   href="http://192.168.2.211:14882/uploads/index.php" >http://192.168.2.211:14882/uploads/index.php<i class="fas fa-external-link-alt"></i></a></strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174659762.png"
+                      alt="image-20230824174659762"
+                ></p>
+<p><em><strong>9.连接成功！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174712986.png"
+                      alt="image-20230824174712986"
+                ></p>
+<p><em><strong>10.成功在主目录下tmp文件夹中找到flag！</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/dedecms%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2019-8933)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/image-20230824174729905.png"
+                      alt="image-20230824174729905"
+                ></p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>monstra文件上传(CVE-2020-13384)漏洞复现</title>
+    <url>/2023/08/24/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0(CVE-2020-13384)%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<p><em><strong>1、打开环境，注册账号账号密码统一设置为admin方便记忆，<a class="link"   href="mailto:&#x31;&#x32;&#51;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#109;" >&#x31;&#x32;&#51;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#109;<i class="fas fa-external-link-alt"></i></a>设置为邮箱</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps8.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>2、点击logged in</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps9.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>3、点击upload file</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps10.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>4、点击上传文件抓包</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps11.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>5、修改文件名为phar,点击放行，可以看到文件上传成功，点击文件获取路径：</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps12.jpg"
+                      alt="img"
+                > </p>
+<p><em><strong>6、直接查看目录tmp</strong></em></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps13.jpg"
+                      alt="img"
+                > </p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../images/monstra%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-CVE-2020-13384-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/wps14.jpg"
+                      alt="img"
+                > </p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
       </tags>
   </entry>
 </search>
